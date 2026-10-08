@@ -54,5 +54,21 @@ Modifica solo `menu.json` del cliente e carica. Il QR code non cambia mai.
 `"demo": "prova"` mostra la fascia "Anteprima gratuita" e nasconde la pagina a Google: si usa per le prove fatte prima che il locale accetti. Quando diventa cliente si mette `false`.
 `prezzo` può essere un numero (`7`, `7.5`) o un testo (`"5/hg"`, `"6 / 24"`).
 
+### Tema personalizzato (facoltativo)
+
+Per dare al menu i colori del locale (presi dal suo sito, logo o menu cartaceo) si aggiunge `"tema"` in `menu.json`:
+
+```json
+"tema": {"scuro": true, "sfondo": "#202225", "carta": "#2a2c30", "testo": "#f2f2ee", "tenue": "#b4b4ad",
+         "linee": "#3a3d43", "accento": "#fcda1c", "attivo": "#fcda1c", "testo_attivo": "#202225",
+         "titoli": "#ffffff", "font_titoli": "Cinzel", "motivo": "rombi",
+         "fascia": "repeating-linear-gradient(90deg,#fcda1c 0 16px,#b3202a 16px 32px)"}
+```
+
+- `motivo` (sfondo leggero ripetuto, nel colore `accento`): `onde`, `rombi`, `puntini`, `maioliche`.
+- `font_titoli`: qualsiasi font di Google Fonts.
+- `fascia`: striscia colorata in cima alla pagina (colore o gradiente CSS).
+- Tutti i campi sono facoltativi. Senza `tema` il menu usa i colori di su menu.
+
 Allergeni (Reg. UE 1169/2011): 1 Glutine · 2 Crostacei · 3 Uova · 4 Pesce · 5 Arachidi · 6 Soia · 7 Latte ·
 8 Frutta a guscio · 9 Sedano · 10 Senape · 11 Sesamo · 12 Solfiti · 13 Lupini · 14 Molluschi.

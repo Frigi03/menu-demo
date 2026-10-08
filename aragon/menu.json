@@ -8,7 +8,22 @@
   "piatto_del_giorno": null,
   "coperto": null,
   "contatti": null,
-  "colore": "#7a1f2b",
+  "tema": {
+    "scuro": true,
+    "sfondo": "#202225",
+    "carta": "#2a2c30",
+    "testo": "#f2f2ee",
+    "tenue": "#b4b4ad",
+    "linee": "#3a3d43",
+    "accento": "#fcda1c",
+    "attivo": "#fcda1c",
+    "testo_attivo": "#202225",
+    "titoli": "#ffffff",
+    "vegetariano": "#8fd19e",
+    "font_titoli": "Cinzel",
+    "motivo": "rombi",
+    "fascia": "repeating-linear-gradient(90deg,#fcda1c 0 16px,#b3202a 16px 32px)"
+  },
   "categorie": [
     {
       "id": "pranzo",

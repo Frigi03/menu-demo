@@ -8,7 +8,21 @@
   "piatto_del_giorno": null,
   "coperto": null,
   "contatti": null,
-  "colore": "#8a3b2a",
+  "tema": {
+    "scuro": true,
+    "sfondo": "#293a0d",
+    "carta": "#334716",
+    "testo": "#f3edda",
+    "tenue": "#c9c4a4",
+    "linee": "#46592a",
+    "accento": "#d1ac5a",
+    "attivo": "#d1ac5a",
+    "testo_attivo": "#1f2c09",
+    "titoli": "#d1ac5a",
+    "vegetariano": "#a8d080",
+    "font_titoli": "Cormorant Garamond",
+    "motivo": "onde"
+  },
   "categorie": [
     {
       "id": "bocconcini",

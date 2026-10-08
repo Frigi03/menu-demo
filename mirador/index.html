@@ -64,11 +64,23 @@ footer a{color:var(--muted);text-decoration:none;display:inline-flex;align-items
 footer a img{width:18px;height:18px;border-radius:4px}
 .err{padding:40px 0;color:var(--muted)}
 :focus-visible{outline:2px solid var(--sea);outline-offset:2px}
+/* Tema personalizzato del locale (menu.json -> "tema"): colori, font dei titoli e motivo di sfondo */
+body.tema{background-image:var(--motivo,none);background-size:var(--motivo-size,auto)}
+body.tema nav.cats{background:color-mix(in srgb,var(--bg) 92%,transparent);-webkit-backdrop-filter:blur(8px);backdrop-filter:blur(8px)}
+body.tema nav.cats a.on{color:var(--on-sea,#fff)}
+body.tema header.top::after{content:"";display:block;height:14px;margin-top:14px;background:
+  linear-gradient(var(--accent),var(--accent)) left center/calc(50% - 14px) 1px no-repeat,
+  linear-gradient(var(--accent),var(--accent)) right center/calc(50% - 14px) 1px no-repeat,
+  var(--rombo) center/12px 12px no-repeat;opacity:.9}
+body.tema .fascia{height:8px;background:var(--fascia,var(--accent))}
+body.tema section.cat h2{color:var(--titoli,var(--ink))}
+body.tema h1{color:var(--titoli,var(--ink))}
 @media (max-width:380px){.legend ol{columns:1}}
 @media (prefers-reduced-motion:no-preference){html{scroll-behavior:smooth}}
 </style>
 </head>
 <body>
+<div class="fascia" id="fascia" hidden></div>
 <div class="demo" id="demo-bar" hidden></div>
 <div class="wrap">
   <header class="top">
@@ -121,6 +133,34 @@ const price = p => p === "" || p == null || p === 0 ? "" : typeof p === "number"
   ? "€ " + p.toFixed(2).replace(".", ",").replace(",00", "")
   : "€ " + String(p).replace("hg", lang === "it" ? "hg" : "100g");
 
+
+const MOTIVI = {
+  // c = colore (accento), viene inserito nel disegno; ogni motivo è un piccolo SVG ripetuto
+  onde: c => [`<svg xmlns='http://www.w3.org/2000/svg' width='120' height='36'><path d='M0 18 Q15 8 30 18 T60 18 T90 18 T120 18' fill='none' stroke='${c}' stroke-width='1.2' opacity='.16'/></svg>`, "120px 36px"],
+  rombi: c => [`<svg xmlns='http://www.w3.org/2000/svg' width='36' height='36'><path d='M18 4 L32 18 L18 32 L4 18 Z' fill='none' stroke='${c}' stroke-width='1' opacity='.12'/><circle cx='18' cy='18' r='1.6' fill='${c}' opacity='.18'/></svg>`, "36px 36px"],
+  puntini: c => [`<svg xmlns='http://www.w3.org/2000/svg' width='22' height='22'><circle cx='11' cy='11' r='1.4' fill='${c}' opacity='.18'/></svg>`, "22px 22px"],
+  maioliche: c => [`<svg xmlns='http://www.w3.org/2000/svg' width='48' height='48'><g fill='none' stroke='${c}' stroke-width='1' opacity='.13'><circle cx='24' cy='24' r='10'/><path d='M24 0v8M24 40v8M0 24h8M40 24h8M24 14l10 10-10 10-10-10z'/></g></svg>`, "48px 48px"]
+};
+function applicaTema(tm){
+  const r = document.documentElement.style, V = {sfondo:"--bg", carta:"--card", testo:"--ink", tenue:"--muted", linee:"--line",
+    accento:"--accent", attivo:"--sea", testo_attivo:"--on-sea", vegetariano:"--veg", titoli:"--titoli", fascia:"--fascia"};
+  for (const k in V) if (tm[k]) r.setProperty(V[k], tm[k]);
+  if (tm.scuro != null) { document.documentElement.dataset.theme = tm.scuro ? "dark" : "light"; r.setProperty("color-scheme", tm.scuro ? "dark" : "light"); }
+  if (tm.font_titoli) {
+    const l = document.createElement("link"); l.rel = "stylesheet";
+    l.href = "https://fonts.googleapis.com/css2?family=" + encodeURIComponent(tm.font_titoli).replace(/%20/g, "+") + ":wght@400;600&display=swap";
+    document.head.appendChild(l); r.setProperty("--f-display", `"${tm.font_titoli}",Georgia,serif`);
+  }
+  const m = MOTIVI[tm.motivo];
+  if (m) { const [svg, size] = m(tm.accento || "#d39a1c"); r.setProperty("--motivo", `url("data:image/svg+xml,${encodeURIComponent(svg)}")`); r.setProperty("--motivo-size", size); }
+  const rombo = `<svg xmlns='http://www.w3.org/2000/svg' width='12' height='12'><path d='M6 0L12 6L6 12L0 6Z' fill='${tm.accento || "#d39a1c"}'/></svg>`;
+  r.setProperty("--rombo", `url("data:image/svg+xml,${encodeURIComponent(rombo)}")`);
+  if (tm.fascia) $("fascia").hidden = false;
+  document.body.classList.add("tema");
+  const mc = document.querySelector('meta[name=theme-color]') || document.head.appendChild(Object.assign(document.createElement("meta"), {name:"theme-color"}));
+  mc.content = tm.sfondo || "";
+}
+
 function render(){
   if(!M) return;
   const t = T[lang], veg = $("f-veg").checked, glu = $("f-glu").checked;
@@ -169,7 +209,7 @@ $("b-en").onclick = () => { lang = "en"; render(); };
 $("f-veg").onchange = render; $("f-glu").onchange = render;
 addEventListener("scroll", spy, {passive:true});
 fetch("menu.json", {cache:"no-cache"}).then(r => { if(!r.ok) throw 0; return r.json(); })
-  .then(d => { M = d; if(M.colore) document.documentElement.style.setProperty("--sea", M.colore); render(); })
+  .then(d => { M = d; if(M.colore) document.documentElement.style.setProperty("--sea", M.colore); if(M.tema) applicaTema(M.tema); render(); })
   .catch(() => { $("menu").innerHTML = `<p class="err">${esc(T[lang].err)}</p>`; });
 })();
 </script>
