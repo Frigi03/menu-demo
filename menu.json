@@ -1,0 +1,296 @@
+{
+  "nome": "Locanda Maestrale",
+  "demo": true,
+  "sottotitolo": {
+    "it": "Cucina sarda di mare e di terra",
+    "en": "Sardinian cuisine from sea and land"
+  },
+  "piatto_del_giorno": {
+    "it": "Fregola con arselle e bottarga di Cabras · € 17",
+    "en": "Fregola pasta with clams and Cabras bottarga · € 17"
+  },
+  "coperto": {
+    "it": "Coperto € 2,50 · Acqua e pane carasau inclusi",
+    "en": "Cover charge € 2.50 · Water and carasau bread included"
+  },
+  "contatti": {},
+  "categorie": [
+    {
+      "id": "antipasti",
+      "nome": {
+        "it": "Antipasti",
+        "en": "Starters"
+      },
+      "piatti": [
+        {
+          "nome": {
+            "it": "Tagliere del pastore",
+            "en": "Shepherd's board"
+          },
+          "descrizione": {
+            "it": "Salsiccia sarda, prosciutto di montagna, pecorino stagionato e carasau",
+            "en": "Sardinian sausage, mountain ham, aged pecorino and carasau bread"
+          },
+          "prezzo": 14,
+          "allergeni": [
+            1,
+            7
+          ],
+          "tipico": true
+        },
+        {
+          "nome": {
+            "it": "Pane guttiau con pomodorini",
+            "en": "Guttiau bread with cherry tomatoes"
+          },
+          "descrizione": {
+            "it": "Carasau tostato con olio, sale e pomodorini di campo",
+            "en": "Toasted carasau with olive oil, salt and field tomatoes"
+          },
+          "prezzo": 6,
+          "allergeni": [
+            1
+          ],
+          "tipico": true,
+          "vegetariano": true
+        },
+        {
+          "nome": {
+            "it": "Polpo alla campidanese",
+            "en": "Campidano-style octopus"
+          },
+          "descrizione": {
+            "it": "Polpo tenero, patate, olive e prezzemolo",
+            "en": "Tender octopus, potatoes, olives and parsley"
+          },
+          "prezzo": 13,
+          "allergeni": [
+            14
+          ]
+        }
+      ]
+    },
+    {
+      "id": "primi",
+      "nome": {
+        "it": "Primi",
+        "en": "First courses"
+      },
+      "piatti": [
+        {
+          "nome": {
+            "it": "Culurgiones al pomodoro",
+            "en": "Culurgiones with tomato"
+          },
+          "descrizione": {
+            "it": "Ravioli di patate, pecorino e menta, chiusi a spiga",
+            "en": "Potato, pecorino and mint ravioli with the wheat-ear seal"
+          },
+          "prezzo": 14,
+          "allergeni": [
+            1,
+            3,
+            7
+          ],
+          "tipico": true,
+          "vegetariano": true
+        },
+        {
+          "nome": {
+            "it": "Malloreddus alla campidanese",
+            "en": "Malloreddus Campidano-style"
+          },
+          "descrizione": {
+            "it": "Gnocchetti sardi con ragù di salsiccia e zafferano",
+            "en": "Sardinian gnocchetti with sausage ragù and saffron"
+          },
+          "prezzo": 13,
+          "allergeni": [
+            1,
+            7
+          ],
+          "tipico": true
+        },
+        {
+          "nome": {
+            "it": "Spaghetti ai ricci",
+            "en": "Sea urchin spaghetti"
+          },
+          "descrizione": {
+            "it": "Ricci di mare freschi, aglio e olio (in stagione)",
+            "en": "Fresh sea urchin, garlic and olive oil (in season)"
+          },
+          "prezzo": 22,
+          "allergeni": [
+            1,
+            14
+          ]
+        }
+      ]
+    },
+    {
+      "id": "secondi",
+      "nome": {
+        "it": "Secondi",
+        "en": "Main courses"
+      },
+      "piatti": [
+        {
+          "nome": {
+            "it": "Porceddu arrosto",
+            "en": "Roast porceddu"
+          },
+          "descrizione": {
+            "it": "Maialino da latte al mirto, cotto a fuoco lento (su prenotazione)",
+            "en": "Suckling pig with myrtle, slow-roasted (on request)"
+          },
+          "prezzo": 22,
+          "allergeni": [],
+          "tipico": true
+        },
+        {
+          "nome": {
+            "it": "Pescato del giorno",
+            "en": "Catch of the day"
+          },
+          "descrizione": {
+            "it": "Alla griglia o all'acqua pazza, con verdure di stagione",
+            "en": "Grilled or in light tomato broth, with seasonal vegetables"
+          },
+          "prezzo": "5/hg",
+          "allergeni": [
+            4
+          ]
+        },
+        {
+          "nome": {
+            "it": "Melanzane al forno",
+            "en": "Baked aubergine"
+          },
+          "descrizione": {
+            "it": "Melanzane, pomodoro e pecorino gratinato",
+            "en": "Aubergine, tomato and gratinated pecorino"
+          },
+          "prezzo": 11,
+          "allergeni": [
+            7
+          ],
+          "vegetariano": true
+        }
+      ]
+    },
+    {
+      "id": "dolci",
+      "nome": {
+        "it": "Dolci",
+        "en": "Desserts"
+      },
+      "piatti": [
+        {
+          "nome": {
+            "it": "Seadas al miele di corbezzolo",
+            "en": "Seadas with strawberry-tree honey"
+          },
+          "descrizione": {
+            "it": "Sfoglia fritta ripiena di formaggio fresco e scorza di limone",
+            "en": "Fried pastry filled with fresh cheese and lemon zest"
+          },
+          "prezzo": 7,
+          "allergeni": [
+            1,
+            3,
+            7
+          ],
+          "tipico": true,
+          "vegetariano": true
+        },
+        {
+          "nome": {
+            "it": "Pardulas",
+            "en": "Pardulas"
+          },
+          "descrizione": {
+            "it": "Tortine di ricotta e zafferano",
+            "en": "Ricotta and saffron tartlets"
+          },
+          "prezzo": 6,
+          "allergeni": [
+            1,
+            3,
+            7
+          ],
+          "tipico": true,
+          "vegetariano": true
+        },
+        {
+          "nome": {
+            "it": "Sorbetto al limone",
+            "en": "Lemon sorbet"
+          },
+          "descrizione": {
+            "it": "Fatto in casa",
+            "en": "Homemade"
+          },
+          "prezzo": 5,
+          "allergeni": [],
+          "vegetariano": true
+        }
+      ]
+    },
+    {
+      "id": "bere",
+      "nome": {
+        "it": "Da bere",
+        "en": "Drinks"
+      },
+      "piatti": [
+        {
+          "nome": {
+            "it": "Cannonau di Sardegna DOC",
+            "en": "Cannonau di Sardegna DOC"
+          },
+          "descrizione": {
+            "it": "Calice / bottiglia",
+            "en": "Glass / bottle"
+          },
+          "prezzo": "6 / 24",
+          "allergeni": [
+            12
+          ],
+          "tipico": true,
+          "vegetariano": true
+        },
+        {
+          "nome": {
+            "it": "Vermentino di Gallura DOCG",
+            "en": "Vermentino di Gallura DOCG"
+          },
+          "descrizione": {
+            "it": "Calice / bottiglia",
+            "en": "Glass / bottle"
+          },
+          "prezzo": "6 / 26",
+          "allergeni": [
+            12
+          ],
+          "tipico": true,
+          "vegetariano": true
+        },
+        {
+          "nome": {
+            "it": "Mirto della casa",
+            "en": "House mirto"
+          },
+          "descrizione": {
+            "it": "Amaro di mirto rosso",
+            "en": "Red myrtle liqueur"
+          },
+          "prezzo": 4,
+          "allergeni": [],
+          "tipico": true,
+          "vegetariano": true
+        }
+      ]
+    }
+  ]
+}
