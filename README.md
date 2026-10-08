@@ -65,7 +65,8 @@ Per dare al menu i colori del locale (presi dal suo sito, logo o menu cartaceo) 
          "fascia": "repeating-linear-gradient(90deg,#fcda1c 0 16px,#b3202a 16px 32px)"}
 ```
 
-- `motivo` (sfondo leggero ripetuto, nel colore `accento`): `onde`, `rombi`, `puntini`, `maioliche`.
+- `motivo` (sfondo leggero ripetuto, nel colore `accento`): `onde`, `rombi`, `puntini`, `maioliche`, `diagonali`.
+- `titoli_fascia: true`: titoli delle categorie su una fascia del colore `accento`, in maiuscolo.
 - `font_titoli`: qualsiasi font di Google Fonts.
 - `fascia`: striscia colorata in cima alla pagina (colore o gradiente CSS).
 - Tutti i campi sono facoltativi. Senza `tema` il menu usa i colori di su menu.

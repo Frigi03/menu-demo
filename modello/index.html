@@ -75,6 +75,8 @@ body.tema header.top::after{content:"";display:block;height:14px;margin-top:14px
 body.tema .fascia{height:8px;background:var(--fascia,var(--accent))}
 body.tema section.cat h2{color:var(--titoli,var(--ink))}
 body.tema h1{color:var(--titoli,var(--ink))}
+body.tema.tf section.cat h2{background:var(--accent);color:var(--on-sea,#111);text-transform:uppercase;letter-spacing:.14em;text-align:center;font-size:17px;padding:7px 12px;margin-bottom:8px}
+body.tema.tf .cat-note{text-align:center}
 @media (max-width:380px){.legend ol{columns:1}}
 @media (prefers-reduced-motion:no-preference){html{scroll-behavior:smooth}}
 </style>
@@ -139,6 +141,7 @@ const MOTIVI = {
   onde: c => [`<svg xmlns='http://www.w3.org/2000/svg' width='120' height='36'><path d='M0 18 Q15 8 30 18 T60 18 T90 18 T120 18' fill='none' stroke='${c}' stroke-width='1.2' opacity='.16'/></svg>`, "120px 36px"],
   rombi: c => [`<svg xmlns='http://www.w3.org/2000/svg' width='36' height='36'><path d='M18 4 L32 18 L18 32 L4 18 Z' fill='none' stroke='${c}' stroke-width='1' opacity='.12'/><circle cx='18' cy='18' r='1.6' fill='${c}' opacity='.18'/></svg>`, "36px 36px"],
   puntini: c => [`<svg xmlns='http://www.w3.org/2000/svg' width='22' height='22'><circle cx='11' cy='11' r='1.4' fill='${c}' opacity='.18'/></svg>`, "22px 22px"],
+  diagonali: c => [`<svg xmlns='http://www.w3.org/2000/svg' width='16' height='16'><path d='M-4 4L4 -4M0 16L16 0M12 20L20 12' stroke='${c}' stroke-width='1' opacity='.07'/></svg>`, "16px 16px"],
   maioliche: c => [`<svg xmlns='http://www.w3.org/2000/svg' width='48' height='48'><g fill='none' stroke='${c}' stroke-width='1' opacity='.13'><circle cx='24' cy='24' r='10'/><path d='M24 0v8M24 40v8M0 24h8M40 24h8M24 14l10 10-10 10-10-10z'/></g></svg>`, "48px 48px"]
 };
 function applicaTema(tm){
@@ -156,7 +159,7 @@ function applicaTema(tm){
   const rombo = `<svg xmlns='http://www.w3.org/2000/svg' width='12' height='12'><path d='M6 0L12 6L6 12L0 6Z' fill='${tm.accento || "#d39a1c"}'/></svg>`;
   r.setProperty("--rombo", `url("data:image/svg+xml,${encodeURIComponent(rombo)}")`);
   if (tm.fascia) $("fascia").hidden = false;
-  document.body.classList.add("tema");
+  document.body.classList.add("tema"); if (tm.titoli_fascia) document.body.classList.add("tf");
   const mc = document.querySelector('meta[name=theme-color]') || document.head.appendChild(Object.assign(document.createElement("meta"), {name:"theme-color"}));
   mc.content = tm.sfondo || "";
 }
