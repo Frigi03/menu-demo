@@ -1,0 +1,225 @@
+<!doctype html>
+<html lang="it">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>Frigi · Menu digitali per ristoranti in Sardegna</title>
+<meta name="description" content="Menu digitali con QR code per ristoranti, pizzerie e bar in Sardegna: italiano e inglese, allergeni, aggiornamenti in giornata. Prova gratuita.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Young+Serif&family=Figtree:wght@400;500;600;700&display=swap">
+<style>
+/* Layout: pagina a colonna — promessa + telefono con la demo vera, prima/dopo, come funziona, chi sono, domande, contatto. */
+:root{
+  --bg:#f6f7f4; --card:#ffffff; --ink:#14233a; --muted:#5d6878; --line:#dde2e6;
+  --sea:#1f5f7a; --saffron:#d39a1c; --bad:#a8473a;
+  --f-display:"Young Serif",Georgia,"Times New Roman",serif;
+  --f-body:"Figtree","Segoe UI",system-ui,sans-serif;
+}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){
+  --bg:#0f1722;--card:#162131;--ink:#e9edf2;--muted:#9aa6b6;--line:#26354a;--sea:#6fb3cf;--saffron:#e8b23c;--bad:#e08b7e;color-scheme:dark}}
+:root[data-theme="dark"]{--bg:#0f1722;--card:#162131;--ink:#e9edf2;--muted:#9aa6b6;--line:#26354a;--sea:#6fb3cf;--saffron:#e8b23c;--bad:#e08b7e;color-scheme:dark}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:var(--f-body);font-size:17px;line-height:1.55}
+.wrap{max-width:1040px;margin:0 auto;padding-inline:20px}
+section{padding-block:44px}
+h1,h2,h3{font-family:var(--f-display);font-weight:400;line-height:1.1;text-wrap:balance;margin:0}
+h1{font-size:clamp(34px,6.5vw,58px)}
+h2{font-size:clamp(26px,4vw,36px);margin-bottom:18px}
+h3{font-size:20px}
+p{margin:0}
+.muted{color:var(--muted)}
+.eyebrow{font-size:13px;font-weight:700;letter-spacing:.12em;text-transform:uppercase;color:var(--saffron)}
+a{color:var(--sea)}
+.btn{display:inline-block;text-decoration:none;font-weight:700;padding:12px 20px;border-radius:999px;border:2px solid var(--sea)}
+.btn.primary{background:var(--sea);color:#fff}
+.btn.ghost{color:var(--sea);background:transparent}
+:focus-visible{outline:3px solid var(--saffron);outline-offset:3px}
+
+/* hero */
+.hero{display:grid;grid-template-columns:1.15fr .85fr;gap:40px;align-items:center;padding-block:48px 36px}
+.hero-text{display:flex;flex-direction:column;gap:18px;min-width:0}
+.hero-text .lead{font-size:19px;color:var(--muted);max-width:34ch}
+.ctas{display:flex;gap:12px;flex-wrap:wrap}
+.points{display:flex;flex-wrap:wrap;gap:8px 18px;font-size:15px;color:var(--muted);padding:0;margin:0;list-style:none}
+.points li::before{content:"✓ ";color:var(--sea);font-weight:700}
+.phone{justify-self:center;width:min(300px,100%);aspect-ratio:9/18.5;border:10px solid var(--ink);border-radius:40px;overflow:hidden;background:var(--card);box-shadow:0 30px 60px -30px rgba(20,35,58,.45);position:relative}
+.phone iframe{width:100%;height:100%;border:0;display:block}
+.phone-cap{text-align:center;font-size:13px;color:var(--muted);margin-top:10px}
+
+/* prima / dopo */
+.ba{display:grid;grid-template-columns:1fr 1fr;gap:18px}
+.ba-card{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:20px;display:flex;flex-direction:column;gap:12px;min-width:0}
+.ba-card h3{display:flex;align-items:center;gap:10px}
+.tagp{font-family:var(--f-body);font-size:12px;font-weight:700;letter-spacing:.08em;text-transform:uppercase;padding:3px 10px;border-radius:999px}
+.before .tagp{background:color-mix(in srgb,var(--bad) 14%,transparent);color:var(--bad)}
+.after .tagp{background:color-mix(in srgb,var(--sea) 14%,transparent);color:var(--sea)}
+.ba-card ul{margin:0;padding-left:20px;color:var(--muted);font-size:15.5px}
+.photo-menu{height:150px;border-radius:10px;position:relative;overflow:hidden}
+.photo-menu::before{content:"";position:absolute;inset:0;background:
+  repeating-linear-gradient(0deg,transparent 0 14px,color-mix(in srgb,var(--muted) 30%,transparent) 14px 16px),
+  linear-gradient(135deg,color-mix(in srgb,var(--saffron) 20%,var(--card)),var(--card));filter:blur(1.6px)}
+.zoom{position:absolute;right:12px;bottom:12px;background:var(--ink);color:var(--bg);font-size:12px;font-weight:700;padding:4px 10px;border-radius:999px}
+.mini-menu{border:1px solid var(--line);border-radius:10px;padding:12px 14px;font-size:14.5px;display:flex;flex-direction:column;gap:8px}
+.mini-row{display:flex;justify-content:space-between;gap:10px}
+.mini-row b{font-weight:700}
+.mini-row small{display:block;color:var(--muted);font-size:12.5px}
+.al{display:inline-grid;place-items:center;width:18px;height:18px;border-radius:50%;background:var(--line);font-size:10px;font-weight:700;margin-left:2px}
+
+/* steps */
+.steps{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;counter-reset:s;list-style:none;padding:0;margin:0}
+.steps li{counter-increment:s;border-top:2px solid var(--sea);padding-top:14px;display:flex;flex-direction:column;gap:6px}
+.steps li::before{content:counter(s);font-family:var(--f-display);font-size:34px;color:var(--saffron);line-height:1}
+.steps p{color:var(--muted);font-size:15.5px}
+
+/* include */
+.incl{display:grid;grid-template-columns:repeat(2,1fr);gap:10px 28px;padding:0;margin:0;list-style:none}
+.incl li{padding-left:28px;position:relative}
+.incl li::before{content:"";position:absolute;left:0;top:.45em;width:14px;height:14px;border-radius:4px;background:var(--saffron)}
+.incl b{display:block}
+.incl span{color:var(--muted);font-size:15px}
+
+/* chi sono */
+.me{background:var(--card);border:1px solid var(--line);border-radius:20px;padding:28px;display:grid;grid-template-columns:auto 1fr;gap:24px;align-items:start}
+.avatar{width:84px;height:84px;border-radius:50%;background:var(--sea);color:#fff;display:grid;place-items:center;font-family:var(--f-display);font-size:38px}
+.me p+p{margin-top:12px}
+
+/* faq */
+details{border-bottom:1px solid var(--line);padding:14px 0}
+summary{cursor:pointer;font-weight:700;list-style:none;display:flex;justify-content:space-between;gap:12px}
+summary::after{content:"+";color:var(--sea);font-size:22px;line-height:1}
+details[open] summary::after{content:"–"}
+details p{color:var(--muted);margin-top:8px;max-width:65ch}
+
+/* contatto */
+.contact{background:var(--ink);color:var(--bg);border-radius:24px;padding:36px 28px;display:flex;flex-direction:column;gap:16px;align-items:flex-start}
+.contact h2{color:var(--bg);margin:0}
+.contact p{opacity:.85;max-width:52ch}
+.mail{font-size:clamp(18px,3.4vw,24px);font-weight:700;color:var(--bg);word-break:break-all}
+.contact .btn.primary{background:var(--saffron);border-color:var(--saffron);color:#1b1404}
+.copy{background:transparent;color:var(--bg);border:1px solid color-mix(in srgb,var(--bg) 40%,transparent);border-radius:999px;padding:8px 14px;font:600 14px var(--f-body);cursor:pointer}
+footer{padding-block:28px 40px;font-size:13.5px;color:var(--muted);text-align:center}
+
+@media (max-width:820px){
+  .hero{grid-template-columns:1fr;padding-top:32px}
+  .ba,.steps,.incl{grid-template-columns:1fr}
+  .me{grid-template-columns:1fr}
+}
+@media (prefers-reduced-motion:no-preference){html{scroll-behavior:smooth}}
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <header class="hero">
+    <div class="hero-text">
+      <div class="eyebrow">Menu digitali · Sardegna</div>
+      <h1>Il vostro menu, leggibile da ogni telefono. In italiano e in inglese.</h1>
+      <p class="lead">Un QR code sul tavolo e il cliente vede piatti, prezzi e allergeni, nella sua lingua. Quando cambia un piatto, lo aggiorno io in giornata.</p>
+      <div class="ctas">
+        <a class="btn primary" href="#contatto">Prova gratuita</a>
+        <a class="btn ghost" href="../" target="_blank" rel="noopener">Apri la demo</a>
+      </div>
+      <ul class="points">
+        <li>Nessuna app da installare</li>
+        <li>Allergeni secondo il Reg. UE 1169/2011</li>
+        <li>QR code pronto da stampare</li>
+      </ul>
+    </div>
+    <div>
+      <div class="phone"><iframe src="../" title="Demo del menu digitale" loading="lazy"></iframe></div>
+      <div class="phone-cap">La demo vera: scorrila qui dentro</div>
+    </div>
+  </header>
+
+  <section aria-labelledby="ba-h">
+    <h2 id="ba-h">Cosa cambia per i vostri clienti</h2>
+    <div class="ba">
+      <article class="ba-card before">
+        <h3>Oggi <span class="tagp">foto o PDF</span></h3>
+        <div class="photo-menu" aria-hidden="true"><span class="zoom">🔍 ingrandisci…</span></div>
+        <ul>
+          <li>Dal telefono bisogna scaricare il file e ingrandire</li>
+          <li>Solo in italiano: il turista chiede al cameriere piatto per piatto</li>
+          <li>Ogni cambio di prezzo vuol dire rifare il PDF o ristampare</li>
+        </ul>
+      </article>
+      <article class="ba-card after">
+        <h3>Con il menu digitale <span class="tagp">testo vero</span></h3>
+        <div class="mini-menu" aria-hidden="true">
+          <div class="mini-row"><div><b>Culurgiones al pomodoro</b><small>Potato, pecorino and mint ravioli</small></div><b>€ 14</b></div>
+          <div class="mini-row"><div><b>Fregola con arselle</b><small>Allergeni <span class="al">1</span><span class="al">14</span></small></div><b>€ 17</b></div>
+        </div>
+        <ul>
+          <li>Si apre subito, leggibile su qualsiasi telefono</li>
+          <li>Lingua scelta in automatico, con pulsanti IT / EN</li>
+          <li>Allergeni e filtri vegetariano e senza glutine</li>
+        </ul>
+      </article>
+    </div>
+  </section>
+
+  <section aria-labelledby="come-h">
+    <h2 id="come-h">Come funziona</h2>
+    <ol class="steps">
+      <li><h3>Mi mandate il menu</h3><p>Una foto o il PDF che usate già, via email. Nient'altro.</p></li>
+      <li><h3>Lo preparo io</h3><p>Trascrivo i piatti, li traduco in inglese e segno gli allergeni. Voi controllate e approvate.</p></li>
+      <li><h3>QR code sul tavolo</h3><p>Vi do il QR code da stampare e il link da mettere su Google Maps, sito e Instagram.</p></li>
+    </ol>
+  </section>
+
+  <section aria-labelledby="incl-h">
+    <h2 id="incl-h">Cosa include</h2>
+    <ul class="incl">
+      <li><b>Menu in italiano e inglese</b><span>Si apre nella lingua del telefono del cliente.</span></li>
+      <li><b>Allergeni per ogni piatto</b><span>Con legenda e filtri vegetariano e senza glutine.</span></li>
+      <li><b>QR code per i tavoli</b><span>Pronto da stampare, non cambia mai.</span></li>
+      <li><b>Aggiornamenti in giornata</b><span>Piatto del giorno, prezzi, piatti nuovi: basta un messaggio.</span></li>
+      <li><b>Link per Google Maps e social</b><span>Il menu si trova anche prima di arrivare al locale.</span></li>
+      <li><b>Prova gratuita</b><span>Vedete il vostro menu online prima di decidere.</span></li>
+    </ul>
+  </section>
+
+  <section aria-labelledby="me-h">
+    <div class="me">
+      <div class="avatar" aria-hidden="true">F</div>
+      <div>
+        <h2 id="me-h" style="margin-bottom:12px">Chi sono</h2>
+        <p>Sono Frigi, di Sinnai. Lavoro in sala nel turismo da qualche stagione, quindi conosco da vicino cosa succede quando un turista non riesce a leggere il menu.</p>
+        <p>Per questo realizzo menu digitali semplici, veloci da leggere e facili da aggiornare, per ristoranti, pizzerie e bar della Sardegna. Lavoro a distanza: tutto si fa via email o telefono.</p>
+      </div>
+    </div>
+  </section>
+
+  <section aria-labelledby="faq-h">
+    <h2 id="faq-h">Domande frequenti</h2>
+    <details><summary>Il cliente deve installare un'app?</summary><p>No. Inquadra il QR code con la fotocamera e il menu si apre nel browser del telefono.</p></details>
+    <details><summary>Quanto tempo serve?</summary><p>Di solito il menu è pronto in uno o due giorni da quando ricevo foto o PDF, dipende da quanti piatti avete.</p></details>
+    <details><summary>Se cambio un piatto o un prezzo?</summary><p>Mi scrivete e lo aggiorno in giornata. Il QR code resta lo stesso, quindi non dovete ristampare niente.</p></details>
+    <details><summary>Chi verifica gli allergeni?</summary><p>Io li segno partendo dagli ingredienti del vostro menu, ma l'ultima parola è vostra: prima della pubblicazione controllate e confermate ogni piatto.</p></details>
+    <details><summary>Quanto costa?</summary><p>La prova è gratuita. Se il risultato vi piace, vi mando un preventivo semplice in base al numero di piatti e agli aggiornamenti che vi servono.</p></details>
+  </section>
+
+  <section id="contatto" aria-labelledby="ct-h">
+    <div class="contact">
+      <h2 id="ct-h">Volete vedere il vostro menu così?</h2>
+      <p>Mandatemi una foto o il PDF del menu attuale: preparo la prova gratuita e vi mando il link.</p>
+      <div class="mail" id="mail">michelefrigau06@gmail.com</div>
+      <div class="ctas">
+        <a class="btn primary" href="mailto:michelefrigau06@gmail.com?subject=Prova%20gratuita%20menu%20digitale">Scrivimi</a>
+        <button class="copy" id="copy" type="button">Copia l'indirizzo</button>
+      </div>
+    </div>
+  </section>
+
+  <footer>Frigi · Menu digitali · Sinnai, Sardegna</footer>
+</div>
+<script>
+document.getElementById("copy").addEventListener("click", async e => {
+  const t = document.getElementById("mail").textContent.trim();
+  try { await navigator.clipboard.writeText(t); e.target.textContent = "Copiato"; }
+  catch { const r = document.createRange(); r.selectNodeContents(document.getElementById("mail")); const s = getSelection(); s.removeAllRanges(); s.addRange(r); e.target.textContent = "Selezionato: copia con Ctrl+C"; }
+  setTimeout(() => e.target.textContent = "Copia l'indirizzo", 2500);
+});
+</script>
+</body>
+</html>
