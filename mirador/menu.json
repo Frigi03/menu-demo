@@ -1,0 +1,589 @@
+{
+  "nome": "Mirador",
+  "demo": "prova",
+  "sottotitolo": {
+    "it": "Alghero",
+    "en": "Alghero"
+  },
+  "piatto_del_giorno": null,
+  "coperto": null,
+  "contatti": null,
+  "colore": "#8a3b2a",
+  "categorie": [
+    {
+      "id": "bocconcini",
+      "nome": {
+        "it": "Bocconcini",
+        "en": "Small bites"
+      },
+      "piatti": [
+        {
+          "nome": {
+            "it": "Gnocco fritto con mortadella IGP, stracciatella e pistacchio di Bronte",
+            "en": "Fried gnocco with mortadella IGP, stracciatella and Bronte pistachio"
+          },
+          "prezzo": null,
+          "tipico": false,
+          "vegetariano": false,
+          "allergeni": [
+            1,
+            7,
+            8
+          ]
+        },
+        {
+          "nome": {
+            "it": "Pan algherese con pomodoro",
+            "en": "Alghero-style bread with tomato"
+          },
+          "prezzo": null,
+          "tipico": true,
+          "vegetariano": true,
+          "allergeni": [
+            1
+          ]
+        },
+        {
+          "nome": {
+            "it": "Pan algherese con pomodoro e jamón ibérico \"Lazo\"",
+            "en": "Alghero-style bread with tomato and \"Lazo\" jamón ibérico"
+          },
+          "prezzo": null,
+          "tipico": false,
+          "vegetariano": false,
+          "allergeni": [
+            1
+          ]
+        },
+        {
+          "nome": {
+            "it": "Arancini di pesce con salsa agliata",
+            "en": "Fish arancini with garlic sauce"
+          },
+          "prezzo": null,
+          "tipico": false,
+          "vegetariano": false,
+          "allergeni": [
+            1,
+            4
+          ]
+        },
+        {
+          "nome": {
+            "it": "Croquetas fatte in casa di jamón ibérico",
+            "en": "Homemade jamón ibérico croquetas"
+          },
+          "prezzo": null,
+          "tipico": false,
+          "vegetariano": false,
+          "allergeni": [
+            1,
+            3,
+            7
+          ]
+        },
+        {
+          "nome": {
+            "it": "Panadas con patate, carciofi e casizzolu fiammeggiante",
+            "en": "Panadas with potatoes, artichokes and flambéed casizzolu cheese"
+          },
+          "prezzo": null,
+          "tipico": true,
+          "vegetariano": true,
+          "allergeni": [
+            1,
+            7
+          ]
+        },
+        {
+          "nome": {
+            "it": "Patatas bravas stile Mirador",
+            "en": "Mirador-style patatas bravas"
+          },
+          "prezzo": null,
+          "tipico": false,
+          "vegetariano": true,
+          "allergeni": [
+            3
+          ]
+        }
+      ]
+    },
+    {
+      "id": "antipasti",
+      "nome": {
+        "it": "Antipasti",
+        "en": "Starters"
+      },
+      "piatti": [
+        {
+          "nome": {
+            "it": "Burrata con aria di basilico, pomodori e acciughe",
+            "en": "Burrata with basil air, tomatoes and anchovies"
+          },
+          "prezzo": null,
+          "tipico": false,
+          "vegetariano": false,
+          "allergeni": [
+            4,
+            7
+          ]
+        },
+        {
+          "nome": {
+            "it": "Gazpacho algherese",
+            "en": "Alghero-style gazpacho"
+          },
+          "prezzo": null,
+          "tipico": false,
+          "vegetariano": true,
+          "allergeni": []
+        },
+        {
+          "nome": {
+            "it": "Zuppa di cozze al curry e rosmarino",
+            "en": "Mussel soup with curry and rosemary"
+          },
+          "prezzo": null,
+          "tipico": false,
+          "vegetariano": false,
+          "allergeni": [
+            14
+          ]
+        },
+        {
+          "nome": {
+            "it": "Polpo piastrato, topinambur e datterino candito",
+            "en": "Seared octopus, Jerusalem artichoke and candied datterino tomato"
+          },
+          "prezzo": null,
+          "tipico": false,
+          "vegetariano": false,
+          "allergeni": [
+            14
+          ]
+        },
+        {
+          "nome": {
+            "it": "Ostriche e gamberi",
+            "en": "Oysters and prawns"
+          },
+          "prezzo": null,
+          "tipico": false,
+          "vegetariano": false,
+          "allergeni": [
+            2,
+            14
+          ]
+        },
+        {
+          "nome": {
+            "it": "Tartare di pesce del giorno con finocchi, ginepro e bufala",
+            "en": "Catch of the day tartare with fennel, juniper and buffalo mozzarella"
+          },
+          "prezzo": null,
+          "tipico": false,
+          "vegetariano": false,
+          "allergeni": [
+            4,
+            7
+          ]
+        },
+        {
+          "nome": {
+            "it": "Tartare di manzo con latticello homemade e cetriolo",
+            "en": "Beef tartare with homemade buttermilk and cucumber"
+          },
+          "prezzo": null,
+          "tipico": false,
+          "vegetariano": false,
+          "allergeni": [
+            7
+          ]
+        },
+        {
+          "nome": {
+            "it": "Vitello tonnato 2.0",
+            "en": "Vitello tonnato 2.0 (veal with tuna sauce)"
+          },
+          "prezzo": null,
+          "tipico": false,
+          "vegetariano": false,
+          "allergeni": [
+            3,
+            4
+          ]
+        },
+        {
+          "nome": {
+            "it": "Tagliere di salumi e formaggi locali con miele e confetture",
+            "en": "Local cured meats and cheeses with honey and jams"
+          },
+          "prezzo": null,
+          "tipico": true,
+          "vegetariano": false,
+          "allergeni": [
+            7
+          ]
+        },
+        {
+          "nome": {
+            "it": "Jamón ibérico de Bellota 100% \"Lazo\"",
+            "en": "100% Bellota \"Lazo\" jamón ibérico"
+          },
+          "prezzo": null,
+          "tipico": false,
+          "vegetariano": false,
+          "allergeni": []
+        },
+        {
+          "nome": {
+            "it": "Insalata di calamaro con guacamole e sedano vegano saltato",
+            "en": "Squid salad with guacamole and sautéed celery"
+          },
+          "prezzo": null,
+          "tipico": false,
+          "vegetariano": false,
+          "allergeni": [
+            9,
+            14
+          ]
+        },
+        {
+          "nome": {
+            "it": "Riso allo zafferano fritto con salsa romesco",
+            "en": "Fried saffron rice with romesco sauce"
+          },
+          "prezzo": null,
+          "tipico": false,
+          "vegetariano": true,
+          "allergeni": [
+            1,
+            8
+          ]
+        },
+        {
+          "nome": {
+            "it": "Muggine marinato e affumicato, hummus di ceci e ceviche di frutta affumicata",
+            "en": "Marinated smoked mullet, chickpea hummus and smoked fruit ceviche"
+          },
+          "prezzo": null,
+          "tipico": false,
+          "vegetariano": false,
+          "allergeni": [
+            4,
+            11
+          ]
+        },
+        {
+          "nome": {
+            "it": "Tortilla di patate con salsa alla carbonara",
+            "en": "Potato tortilla with carbonara sauce"
+          },
+          "prezzo": null,
+          "tipico": false,
+          "vegetariano": false,
+          "allergeni": [
+            3,
+            7
+          ]
+        }
+      ]
+    },
+    {
+      "id": "primi",
+      "nome": {
+        "it": "Primi piatti",
+        "en": "Pasta and first courses"
+      },
+      "piatti": [
+        {
+          "nome": {
+            "it": "Tagliolini cacio e pepe",
+            "en": "Tagliolini cacio e pepe (pecorino and black pepper)"
+          },
+          "prezzo": null,
+          "tipico": false,
+          "vegetariano": true,
+          "allergeni": [
+            1,
+            3,
+            7
+          ]
+        },
+        {
+          "nome": {
+            "it": "Tagliolino cacio e pepe con tartufo o bottarga",
+            "en": "Tagliolino cacio e pepe with truffle or bottarga"
+          },
+          "prezzo": null,
+          "tipico": false,
+          "vegetariano": false,
+          "allergeni": [
+            1,
+            3,
+            4,
+            7
+          ]
+        },
+        {
+          "nome": {
+            "it": "Spaghetti vongole e bottarga",
+            "en": "Spaghetti with clams and bottarga"
+          },
+          "prezzo": null,
+          "tipico": true,
+          "vegetariano": false,
+          "allergeni": [
+            1,
+            4,
+            14
+          ]
+        },
+        {
+          "nome": {
+            "it": "Paccheri con amatriciana di polpo, gran anglona e guanciale",
+            "en": "Paccheri with octopus amatriciana, Gran Anglona cheese and guanciale"
+          },
+          "prezzo": null,
+          "tipico": false,
+          "vegetariano": false,
+          "allergeni": [
+            1,
+            7,
+            14
+          ]
+        },
+        {
+          "nome": {
+            "it": "Ravioli homemade di Simone con pomodoro e ricotta mustia",
+            "en": "Simone's homemade ravioli with tomato and smoked ricotta"
+          },
+          "prezzo": null,
+          "tipico": false,
+          "vegetariano": true,
+          "allergeni": [
+            1,
+            3,
+            7
+          ]
+        },
+        {
+          "nome": {
+            "it": "Culurgiones burro, salvia e pecorino",
+            "en": "Culurgiones with butter, sage and pecorino"
+          },
+          "prezzo": null,
+          "tipico": true,
+          "vegetariano": true,
+          "allergeni": [
+            1,
+            7
+          ]
+        },
+        {
+          "nome": {
+            "it": "Fregula ai frutti di mare",
+            "en": "Fregula with seafood"
+          },
+          "prezzo": null,
+          "tipico": true,
+          "vegetariano": false,
+          "allergeni": [
+            1,
+            2,
+            14
+          ]
+        },
+        {
+          "nome": {
+            "it": "Gnocco di patate, Ovinforth, pomodoro fresco marinato al timo",
+            "en": "Potato gnocchi, Ovinforth cheese, fresh tomato marinated with thyme"
+          },
+          "prezzo": null,
+          "tipico": false,
+          "vegetariano": true,
+          "allergeni": [
+            1,
+            7
+          ]
+        },
+        {
+          "nome": {
+            "it": "Lasagna della Nonna",
+            "en": "Grandma's lasagna"
+          },
+          "prezzo": null,
+          "tipico": false,
+          "vegetariano": false,
+          "allergeni": [
+            1,
+            3,
+            7,
+            9
+          ]
+        }
+      ]
+    },
+    {
+      "id": "paella",
+      "nome": {
+        "it": "Paella",
+        "en": "Paella"
+      },
+      "piatti": [
+        {
+          "nome": {
+            "it": "Paella algherese",
+            "en": "Alghero-style paella"
+          },
+          "descrizione": {
+            "it": "Riso, calamari, crostacei, cozze, vongole, pollo e salsiccia",
+            "en": "Rice, squid, shellfish, mussels, clams, chicken and sausage"
+          },
+          "prezzo": null,
+          "tipico": true,
+          "vegetariano": false,
+          "allergeni": [
+            2,
+            14
+          ]
+        },
+        {
+          "nome": {
+            "it": "Paella vegetariana",
+            "en": "Vegetarian paella"
+          },
+          "prezzo": null,
+          "tipico": false,
+          "vegetariano": true,
+          "allergeni": []
+        },
+        {
+          "nome": {
+            "it": "Paella bogavante",
+            "en": "Lobster paella"
+          },
+          "descrizione": {
+            "it": "Riso, bisque di pesce, astice, seppia, aglio, cipolla e spuma di verdure",
+            "en": "Rice, fish bisque, lobster, cuttlefish, garlic, onion and vegetable foam"
+          },
+          "prezzo": null,
+          "tipico": false,
+          "vegetariano": false,
+          "allergeni": [
+            2,
+            9,
+            14
+          ]
+        }
+      ]
+    },
+    {
+      "id": "secondi",
+      "nome": {
+        "it": "Secondi piatti",
+        "en": "Main courses"
+      },
+      "piatti": [
+        {
+          "nome": {
+            "it": "Pescato del giorno al sale o alla griglia con salsa mediterranea",
+            "en": "Catch of the day, salt-baked or grilled, with Mediterranean sauce"
+          },
+          "prezzo": null,
+          "tipico": false,
+          "vegetariano": false,
+          "allergeni": [
+            4
+          ]
+        },
+        {
+          "nome": {
+            "it": "Calamaro piastrato con carotine e belga stufata",
+            "en": "Seared squid with baby carrots and braised endive"
+          },
+          "prezzo": null,
+          "tipico": false,
+          "vegetariano": false,
+          "allergeni": [
+            14
+          ]
+        },
+        {
+          "nome": {
+            "it": "Aragosta alla catalana o alla griglia",
+            "en": "Lobster Catalan style or grilled"
+          },
+          "prezzo": null,
+          "tipico": true,
+          "vegetariano": false,
+          "allergeni": [
+            2
+          ]
+        },
+        {
+          "nome": {
+            "it": "Astice alla catalana o alla griglia",
+            "en": "European lobster Catalan style or grilled"
+          },
+          "prezzo": null,
+          "tipico": false,
+          "vegetariano": false,
+          "allergeni": [
+            2
+          ]
+        },
+        {
+          "nome": {
+            "it": "Filetto di pollo con salsa ai funghi e patate",
+            "en": "Chicken fillet with mushroom sauce and potatoes"
+          },
+          "prezzo": null,
+          "tipico": false,
+          "vegetariano": false,
+          "allergeni": [
+            7
+          ]
+        },
+        {
+          "nome": {
+            "it": "Cubo di rapa rossa con demi-glace di rapa rossa",
+            "en": "Beetroot cube with beetroot demi-glace"
+          },
+          "prezzo": null,
+          "tipico": false,
+          "vegetariano": true,
+          "allergeni": []
+        },
+        {
+          "nome": {
+            "it": "Filetto di maiale CBT con lattughino e demi-glace di verdure",
+            "en": "Slow-cooked pork fillet with baby lettuce and vegetable demi-glace"
+          },
+          "prezzo": null,
+          "tipico": false,
+          "vegetariano": false,
+          "allergeni": [
+            9
+          ]
+        },
+        {
+          "nome": {
+            "it": "Fritto misto con salsa tartara",
+            "en": "Mixed fried seafood with tartare sauce"
+          },
+          "prezzo": null,
+          "tipico": false,
+          "vegetariano": false,
+          "allergeni": [
+            1,
+            2,
+            3,
+            14
+          ]
+        }
+      ]
+    }
+  ]
+}

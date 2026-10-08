@@ -101,12 +101,12 @@ const T = {
   it:{veg:"Solo vegetariani", glu:"Senza glutine", typ:"Tipico sardo", vg:"Vegetariano", todayT:"Piatto del giorno",
       todayS:"Chiedi al personale di sala per la disponibilità", al:"Allergeni", leg:"Allergeni (Reg. UE 1169/2011)",
       legNote:"I numeri accanto ai piatti indicano gli allergeni presenti. Per intolleranze o allergie chiedi sempre al personale.",
-      empty:"Nessun piatto con questi filtri.", foot:"Menu digitale di", demo:"MENU DIMOSTRATIVO · locale e piatti inventati",
+      empty:"Nessun piatto con questi filtri.", foot:"Menu digitale di", demo:"MENU DIMOSTRATIVO · locale e piatti inventati", prova:"ANTEPRIMA GRATUITA · preparata da su menu con il menu pubblicato sul vostro sito, da verificare",
       err:"Menu non disponibile al momento. Chiedi al personale il menu cartaceo."},
   en:{veg:"Vegetarian only", glu:"Gluten free", typ:"Sardinian classic", vg:"Vegetarian", todayT:"Dish of the day",
       todayS:"Ask our staff for availability", al:"Allergens", leg:"Allergens (EU Reg. 1169/2011)",
       legNote:"Numbers next to each dish show the allergens it contains. Please always tell our staff about allergies or intolerances.",
-      empty:"No dishes match these filters.", foot:"Digital menu by", demo:"DEMO MENU · fictional restaurant and dishes",
+      empty:"No dishes match these filters.", foot:"Digital menu by", demo:"DEMO MENU · fictional restaurant and dishes", prova:"FREE PREVIEW · made by su menu from the menu on your website, to be checked",
       err:"Menu currently unavailable. Please ask our staff for the printed menu."}
 };
 const ALLERGENI = {
@@ -132,7 +132,8 @@ function render(){
   $("sub").textContent = L(M.sottotitolo);
   const c = M.contatti || {};
   $("info").innerHTML = [c.indirizzo ? esc(c.indirizzo) : "", c.telefono ? esc(c.telefono) : "", c.orari ? esc(L(c.orari)) : ""].filter(Boolean).join(" · ");
-  $("demo-bar").hidden = !M.demo; $("demo-bar").textContent = t.demo;
+  $("demo-bar").hidden = !M.demo; $("demo-bar").textContent = M.demo === "prova" ? t.prova : t.demo;
+  if (M.demo === "prova" && !document.querySelector('meta[name=robots]')) { const m = document.createElement("meta"); m.name = "robots"; m.content = "noindex"; document.head.appendChild(m); }
   $("l-veg").textContent = t.veg; $("l-glu").textContent = t.glu;
   const pdg = L(M.piatto_del_giorno);
   $("today").hidden = !pdg;

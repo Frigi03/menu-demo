@@ -51,6 +51,7 @@ Modifica solo `menu.json` del cliente e carica. Il QR code non cambia mai.
 ```
 
 `piatto_del_giorno`, `coperto`, `contatti`, `colore` e `nota` sono facoltativi (`null` o assenti).
+`"demo": "prova"` mostra la fascia "Anteprima gratuita" e nasconde la pagina a Google: si usa per le prove fatte prima che il locale accetti. Quando diventa cliente si mette `false`.
 `prezzo` può essere un numero (`7`, `7.5`) o un testo (`"5/hg"`, `"6 / 24"`).
 
 Allergeni (Reg. UE 1169/2011): 1 Glutine · 2 Crostacei · 3 Uova · 4 Pesce · 5 Arachidi · 6 Soia · 7 Latte ·

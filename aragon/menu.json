@@ -1,0 +1,2338 @@
+{
+  "nome": "Aragon",
+  "demo": "prova",
+  "sottotitolo": {
+    "it": "Ristorante e pizzeria · Alghero",
+    "en": "Restaurant and pizzeria · Alghero"
+  },
+  "piatto_del_giorno": null,
+  "coperto": null,
+  "contatti": null,
+  "colore": "#7a1f2b",
+  "categorie": [
+    {
+      "id": "pranzo",
+      "nome": {
+        "it": "Menu pranzo",
+        "en": "Lunch set menus"
+      },
+      "nota": {
+        "it": "Solo a pranzo, esclusi sabato, domenica e festivi",
+        "en": "Lunch only, except Saturdays, Sundays and holidays"
+      },
+      "piatti": [
+        {
+          "nome": {
+            "it": "Menu di pesce",
+            "en": "Fish menu"
+          },
+          "descrizione": {
+            "it": "Bavette alle cozze, calamaro alla griglia, insalata mista, acqua o un calice di vino, caffè",
+            "en": "Bavette with mussels, grilled squid, mixed salad, water or a glass of wine, coffee"
+          },
+          "prezzo": 22,
+          "tipico": false,
+          "vegetariano": false,
+          "allergeni": [
+            1,
+            12,
+            14
+          ]
+        },
+        {
+          "nome": {
+            "it": "Menu di carne",
+            "en": "Meat menu"
+          },
+          "descrizione": {
+            "it": "Spaghetti al pomodoro, cavallo alla griglia, insalata mista, acqua o un calice di vino, caffè",
+            "en": "Spaghetti with tomato sauce, grilled horse meat, mixed salad, water or a glass of wine, coffee"
+          },
+          "prezzo": 20,
+          "tipico": false,
+          "vegetariano": false,
+          "allergeni": [
+            1,
+            12
+          ]
+        }
+      ]
+    },
+    {
+      "id": "antipasti",
+      "nome": {
+        "it": "Antipasti",
+        "en": "Starters"
+      },
+      "piatti": [
+        {
+          "nome": {
+            "it": "Caprese con bufala",
+            "en": "Caprese with buffalo mozzarella"
+          },
+          "prezzo": 15,
+          "tipico": false,
+          "vegetariano": true,
+          "allergeni": [
+            7
+          ]
+        },
+        {
+          "nome": {
+            "it": "Baccalà pastellato in agliata, nuvola di riso",
+            "en": "Battered salt cod in agliata garlic sauce, rice cloud"
+          },
+          "prezzo": 18,
+          "tipico": true,
+          "vegetariano": false,
+          "allergeni": [
+            1,
+            4
+          ]
+        },
+        {
+          "nome": {
+            "it": "Zuppetta di cozze e vongole",
+            "en": "Mussel and clam soup"
+          },
+          "prezzo": 17,
+          "tipico": false,
+          "vegetariano": false,
+          "allergeni": [
+            14
+          ]
+        },
+        {
+          "nome": {
+            "it": "Tartare di scottona, tartufo di Laconi e crema al casizolu",
+            "en": "Heifer beef tartare, Laconi truffle and casizolu cheese cream"
+          },
+          "prezzo": 19,
+          "tipico": false,
+          "vegetariano": false,
+          "allergeni": [
+            7
+          ]
+        },
+        {
+          "nome": {
+            "it": "Degustazione di salumi, formaggi e le nostre confetture",
+            "en": "Cured meats, cheeses and our homemade jams"
+          },
+          "prezzo": 17,
+          "tipico": true,
+          "vegetariano": false,
+          "allergeni": [
+            7
+          ]
+        },
+        {
+          "nome": {
+            "it": "Mix di formaggi della nostra terra e le sue composte",
+            "en": "Local cheese selection with fruit compotes"
+          },
+          "prezzo": 15,
+          "tipico": true,
+          "vegetariano": true,
+          "allergeni": [
+            7
+          ]
+        },
+        {
+          "nome": {
+            "it": "Tartare di tonno e bufala",
+            "en": "Tuna tartare with buffalo mozzarella"
+          },
+          "prezzo": 19,
+          "tipico": false,
+          "vegetariano": false,
+          "allergeni": [
+            4,
+            7
+          ]
+        },
+        {
+          "nome": {
+            "it": "I nostri crudi e i suoi abbinamenti",
+            "en": "Our raw seafood selection"
+          },
+          "prezzo": 32,
+          "tipico": false,
+          "vegetariano": false,
+          "allergeni": [
+            2,
+            4,
+            14
+          ]
+        },
+        {
+          "nome": {
+            "it": "Polpo fritto al mais, bieta all'antica, olive taggiasche, salsa al peperone, patate al pistacchio e la sua granella",
+            "en": "Corn-fried octopus, old-style chard, taggiasca olives, pepper sauce, pistachio potatoes"
+          },
+          "prezzo": 19,
+          "tipico": false,
+          "vegetariano": false,
+          "allergeni": [
+            8,
+            14
+          ]
+        },
+        {
+          "nome": {
+            "it": "Insalata di mare 2.0",
+            "en": "Seafood salad 2.0"
+          },
+          "prezzo": 19,
+          "tipico": false,
+          "vegetariano": false,
+          "allergeni": [
+            2,
+            14
+          ]
+        },
+        {
+          "nome": {
+            "it": "Dadolata di tonno fresco, ovinfort sardo e crumble di olive nere",
+            "en": "Diced fresh tuna, Sardinian ovinfort cheese and black olive crumble"
+          },
+          "prezzo": 18,
+          "tipico": false,
+          "vegetariano": false,
+          "allergeni": [
+            1,
+            4,
+            7
+          ]
+        },
+        {
+          "nome": {
+            "it": "Polpo con patate, olive taggiasche e cipolla rossa di Tropea",
+            "en": "Octopus with potatoes, taggiasca olives and Tropea red onion"
+          },
+          "prezzo": 17,
+          "tipico": false,
+          "vegetariano": false,
+          "allergeni": [
+            14
+          ]
+        },
+        {
+          "nome": {
+            "it": "Antipasto del giorno",
+            "en": "Starter of the day"
+          },
+          "prezzo": 19,
+          "tipico": false,
+          "vegetariano": false,
+          "allergeni": []
+        }
+      ]
+    },
+    {
+      "id": "spaghetti-riso",
+      "nome": {
+        "it": "Spaghetti e riso",
+        "en": "Spaghetti and rice"
+      },
+      "nota": {
+        "it": "Minimo 2 persone, prezzo a persona",
+        "en": "Minimum 2 people, price per person"
+      },
+      "piatti": [
+        {
+          "nome": {
+            "it": "Spaghetti reali",
+            "en": "Spaghetti reali (seafood)"
+          },
+          "prezzo": 19,
+          "tipico": false,
+          "vegetariano": false,
+          "allergeni": [
+            1,
+            2,
+            14
+          ]
+        },
+        {
+          "nome": {
+            "it": "Risotto ai frutti di mare",
+            "en": "Seafood risotto"
+          },
+          "prezzo": 19,
+          "tipico": false,
+          "vegetariano": false,
+          "allergeni": [
+            2,
+            14
+          ]
+        },
+        {
+          "nome": {
+            "it": "Paella Aragon",
+            "en": "Paella Aragon"
+          },
+          "descrizione": {
+            "it": "Solo su prenotazione",
+            "en": "Booking required"
+          },
+          "prezzo": 25,
+          "tipico": false,
+          "vegetariano": false,
+          "allergeni": [
+            2,
+            14
+          ]
+        }
+      ]
+    },
+    {
+      "id": "primi",
+      "nome": {
+        "it": "Primi piatti",
+        "en": "Pasta"
+      },
+      "piatti": [
+        {
+          "nome": {
+            "it": "Tagliolino nero cacio e pepe con tartare di gambero rosso",
+            "en": "Black tagliolino cacio e pepe with red prawn tartare"
+          },
+          "prezzo": 19,
+          "tipico": false,
+          "vegetariano": false,
+          "allergeni": [
+            1,
+            2,
+            3,
+            7,
+            14
+          ]
+        },
+        {
+          "nome": {
+            "it": "Tagliolino vongole e bottarga",
+            "en": "Tagliolino with clams and bottarga"
+          },
+          "prezzo": 20,
+          "tipico": true,
+          "vegetariano": false,
+          "allergeni": [
+            1,
+            3,
+            4,
+            14
+          ]
+        },
+        {
+          "nome": {
+            "it": "Calamarata dentice, pomodorini e alga wakame",
+            "en": "Calamarata pasta with dentex, cherry tomatoes and wakame seaweed"
+          },
+          "prezzo": 19,
+          "tipico": false,
+          "vegetariano": false,
+          "allergeni": [
+            1,
+            4
+          ]
+        },
+        {
+          "nome": {
+            "it": "Culurgiones pomodoro fresco, menta e pecorino",
+            "en": "Culurgiones with fresh tomato, mint and pecorino"
+          },
+          "prezzo": "16 / 18",
+          "tipico": true,
+          "vegetariano": true,
+          "allergeni": [
+            1,
+            7
+          ]
+        }
+      ]
+    },
+    {
+      "id": "secondi-pesce",
+      "nome": {
+        "it": "Secondi di pesce",
+        "en": "Fish main courses"
+      },
+      "piatti": [
+        {
+          "nome": {
+            "it": "Calamari fritti",
+            "en": "Fried squid"
+          },
+          "prezzo": 16,
+          "tipico": false,
+          "vegetariano": false,
+          "allergeni": [
+            1,
+            14
+          ]
+        },
+        {
+          "nome": {
+            "it": "Gamberi locali alla griglia",
+            "en": "Grilled local prawns"
+          },
+          "prezzo": 24,
+          "tipico": false,
+          "vegetariano": false,
+          "allergeni": [
+            2
+          ]
+        },
+        {
+          "nome": {
+            "it": "Polpo arrostito, insalata mediterranea, schiacciata di patate, salsa al prezzemolo e cipolle all'agro",
+            "en": "Roast octopus, Mediterranean salad, crushed potatoes, parsley sauce and pickled onions"
+          },
+          "prezzo": 22,
+          "tipico": false,
+          "vegetariano": false,
+          "allergeni": [
+            14
+          ]
+        },
+        {
+          "nome": {
+            "it": "Tonno in crosta di pane carasau, salsa bernese e patate fresche fritte",
+            "en": "Tuna in carasau bread crust, béarnaise sauce and fresh fries"
+          },
+          "prezzo": 22,
+          "tipico": true,
+          "vegetariano": false,
+          "allergeni": [
+            1,
+            3,
+            4,
+            7
+          ]
+        },
+        {
+          "nome": {
+            "it": "Filetto di pesce, colori di pomodoro e il suo gazpacho, cipolle in agrodolce, teriyaki e maionese al pomodoro secco",
+            "en": "Fish fillet, tomato variations and gazpacho, sweet and sour onions, teriyaki and sun-dried tomato mayo"
+          },
+          "prezzo": 22,
+          "tipico": false,
+          "vegetariano": false,
+          "allergeni": [
+            3,
+            4,
+            6
+          ]
+        },
+        {
+          "nome": {
+            "it": "Frittura mista",
+            "en": "Mixed fried seafood"
+          },
+          "descrizione": {
+            "it": "Minimo 2 persone, prezzo a persona",
+            "en": "Minimum 2 people, price per person"
+          },
+          "prezzo": 28.5,
+          "tipico": false,
+          "vegetariano": false,
+          "allergeni": [
+            1,
+            2,
+            4,
+            14
+          ]
+        },
+        {
+          "nome": {
+            "it": "Grigliata mista",
+            "en": "Mixed seafood grill"
+          },
+          "descrizione": {
+            "it": "Minimo 2 persone, prezzo a persona",
+            "en": "Minimum 2 people, price per person"
+          },
+          "prezzo": 28.5,
+          "tipico": false,
+          "vegetariano": false,
+          "allergeni": [
+            2,
+            4,
+            14
+          ]
+        },
+        {
+          "nome": {
+            "it": "Pescato del giorno alla griglia",
+            "en": "Grilled catch of the day"
+          },
+          "prezzo": "7/hg",
+          "tipico": false,
+          "vegetariano": false,
+          "allergeni": [
+            4
+          ]
+        },
+        {
+          "nome": {
+            "it": "Aragosta alla catalana",
+            "en": "Lobster Catalan style"
+          },
+          "prezzo": "16/hg",
+          "tipico": true,
+          "vegetariano": false,
+          "allergeni": [
+            2
+          ]
+        }
+      ]
+    },
+    {
+      "id": "secondi-carne",
+      "nome": {
+        "it": "Secondi di carne",
+        "en": "Meat main courses"
+      },
+      "piatti": [
+        {
+          "nome": {
+            "it": "Tagliata di angus argentino con aceto balsamico, rucola e scaglie di grana",
+            "en": "Sliced Argentine Angus with balsamic vinegar, rocket and grana flakes"
+          },
+          "prezzo": 20,
+          "tipico": false,
+          "vegetariano": false,
+          "allergeni": [
+            7,
+            12
+          ]
+        },
+        {
+          "nome": {
+            "it": "Filetto di manzo alla griglia",
+            "en": "Grilled beef fillet"
+          },
+          "prezzo": 23,
+          "tipico": false,
+          "vegetariano": false,
+          "allergeni": []
+        },
+        {
+          "nome": {
+            "it": "Costata sarda bortigalese (550 g)",
+            "en": "Sardinian Bortigalese rib steak (550 g)"
+          },
+          "prezzo": 28,
+          "tipico": true,
+          "vegetariano": false,
+          "allergeni": []
+        },
+        {
+          "nome": {
+            "it": "Costata bavarese Simmental",
+            "en": "Bavarian Simmental rib steak"
+          },
+          "prezzo": 30,
+          "tipico": false,
+          "vegetariano": false,
+          "allergeni": []
+        },
+        {
+          "nome": {
+            "it": "Costata danese",
+            "en": "Danish rib steak"
+          },
+          "prezzo": 32,
+          "tipico": false,
+          "vegetariano": false,
+          "allergeni": []
+        },
+        {
+          "nome": {
+            "it": "Costata Rubia Gallega (550 g)",
+            "en": "Rubia Gallega rib steak (550 g)"
+          },
+          "prezzo": 34,
+          "tipico": false,
+          "vegetariano": false,
+          "allergeni": []
+        },
+        {
+          "nome": {
+            "it": "Fiorentina sarda bortigalese (1,1 kg)",
+            "en": "Sardinian Bortigalese T-bone (1.1 kg)"
+          },
+          "prezzo": 65,
+          "tipico": true,
+          "vegetariano": false,
+          "allergeni": []
+        },
+        {
+          "nome": {
+            "it": "Tomahawk irlandese (1,2 kg)",
+            "en": "Irish tomahawk (1.2 kg)"
+          },
+          "prezzo": 70,
+          "tipico": false,
+          "vegetariano": false,
+          "allergeni": []
+        },
+        {
+          "nome": {
+            "it": "Fiorentina danese, frollata 50 giorni (1,1 kg)",
+            "en": "Danish T-bone, 50-day dry aged (1.1 kg)"
+          },
+          "prezzo": 75,
+          "tipico": false,
+          "vegetariano": false,
+          "allergeni": []
+        },
+        {
+          "nome": {
+            "it": "Fiorentina bavarese Simmental (1,1 kg)",
+            "en": "Bavarian Simmental T-bone (1.1 kg)"
+          },
+          "prezzo": 75,
+          "tipico": false,
+          "vegetariano": false,
+          "allergeni": []
+        },
+        {
+          "nome": {
+            "it": "Fiorentina di Fassona piemontese (1,1 kg)",
+            "en": "Piedmontese Fassona T-bone (1.1 kg)"
+          },
+          "prezzo": 80,
+          "tipico": false,
+          "vegetariano": false,
+          "allergeni": []
+        },
+        {
+          "nome": {
+            "it": "Fiorentina Rubia Gallega (1,1 kg)",
+            "en": "Rubia Gallega T-bone (1.1 kg)"
+          },
+          "prezzo": 80,
+          "tipico": false,
+          "vegetariano": false,
+          "allergeni": []
+        },
+        {
+          "nome": {
+            "it": "Wagyu Kobe A5 (200-250 g)",
+            "en": "Kobe Wagyu A5 (200-250 g)"
+          },
+          "descrizione": {
+            "it": "Solo su prenotazione",
+            "en": "Booking required"
+          },
+          "prezzo": 135,
+          "tipico": false,
+          "vegetariano": false,
+          "allergeni": []
+        }
+      ]
+    },
+    {
+      "id": "contorni",
+      "nome": {
+        "it": "Contorni",
+        "en": "Side dishes"
+      },
+      "piatti": [
+        {
+          "nome": {
+            "it": "Patate fritte",
+            "en": "French fries"
+          },
+          "prezzo": 5,
+          "tipico": false,
+          "vegetariano": true,
+          "allergeni": []
+        },
+        {
+          "nome": {
+            "it": "Insalata mista",
+            "en": "Mixed salad"
+          },
+          "prezzo": 5,
+          "tipico": false,
+          "vegetariano": true,
+          "allergeni": []
+        },
+        {
+          "nome": {
+            "it": "Spinaci con olive taggiasche",
+            "en": "Spinach with taggiasca olives"
+          },
+          "prezzo": 6,
+          "tipico": false,
+          "vegetariano": true,
+          "allergeni": []
+        },
+        {
+          "nome": {
+            "it": "Verdure alla griglia",
+            "en": "Grilled vegetables"
+          },
+          "prezzo": 6,
+          "tipico": false,
+          "vegetariano": true,
+          "allergeni": []
+        },
+        {
+          "nome": {
+            "it": "Patate al forno",
+            "en": "Roast potatoes"
+          },
+          "prezzo": 6,
+          "tipico": false,
+          "vegetariano": true,
+          "allergeni": []
+        },
+        {
+          "nome": {
+            "it": "Insalata di rucola, parmigiano e balsamico",
+            "en": "Rocket salad with parmesan and balsamic"
+          },
+          "prezzo": 8,
+          "tipico": false,
+          "vegetariano": true,
+          "allergeni": [
+            7,
+            12
+          ]
+        }
+      ]
+    },
+    {
+      "id": "pizze",
+      "nome": {
+        "it": "Pizze",
+        "en": "Pizzas"
+      },
+      "piatti": [
+        {
+          "nome": {
+            "it": "Marinara",
+            "en": "Marinara"
+          },
+          "descrizione": {
+            "it": "Pomodoro, origano, aglio",
+            "en": "Tomato, oregano, garlic"
+          },
+          "prezzo": "5,50 / 7,50",
+          "tipico": false,
+          "vegetariano": true,
+          "allergeni": [
+            1,
+            7
+          ]
+        },
+        {
+          "nome": {
+            "it": "Margherita",
+            "en": "Margherita"
+          },
+          "descrizione": {
+            "it": "Pomodoro, mozzarella",
+            "en": "Tomato, mozzarella"
+          },
+          "prezzo": "6,50 / 8,50",
+          "tipico": false,
+          "vegetariano": true,
+          "allergeni": [
+            1,
+            7
+          ]
+        },
+        {
+          "nome": {
+            "it": "Pugliese",
+            "en": "Pugliese"
+          },
+          "descrizione": {
+            "it": "Pomodoro, mozzarella, cipolla",
+            "en": "Tomato, mozzarella, onion"
+          },
+          "prezzo": "7 / 9",
+          "tipico": false,
+          "vegetariano": true,
+          "allergeni": [
+            1,
+            7
+          ]
+        },
+        {
+          "nome": {
+            "it": "Toscana",
+            "en": "Toscana"
+          },
+          "descrizione": {
+            "it": "Pomodoro, mozzarella, capperi",
+            "en": "Tomato, mozzarella, capers"
+          },
+          "prezzo": "7 / 9",
+          "tipico": false,
+          "vegetariano": true,
+          "allergeni": [
+            1,
+            7
+          ]
+        },
+        {
+          "nome": {
+            "it": "Würstel",
+            "en": "Würstel"
+          },
+          "descrizione": {
+            "it": "Pomodoro, mozzarella, würstel",
+            "en": "Tomato, mozzarella, frankfurter"
+          },
+          "prezzo": "7 / 9",
+          "tipico": false,
+          "vegetariano": false,
+          "allergeni": [
+            1,
+            7
+          ]
+        },
+        {
+          "nome": {
+            "it": "Romana",
+            "en": "Romana"
+          },
+          "descrizione": {
+            "it": "Pomodoro, mozzarella, acciughe",
+            "en": "Tomato, mozzarella, anchovies"
+          },
+          "prezzo": "7,50 / 9,50",
+          "tipico": false,
+          "vegetariano": false,
+          "allergeni": [
+            1,
+            7,
+            4
+          ]
+        },
+        {
+          "nome": {
+            "it": "Cardinale",
+            "en": "Cardinale"
+          },
+          "descrizione": {
+            "it": "Pomodoro, mozzarella, prosciutto cotto",
+            "en": "Tomato, mozzarella, cooked ham"
+          },
+          "prezzo": "7,50 / 9,50",
+          "tipico": false,
+          "vegetariano": false,
+          "allergeni": [
+            1,
+            7
+          ]
+        },
+        {
+          "nome": {
+            "it": "Siciliana",
+            "en": "Siciliana"
+          },
+          "descrizione": {
+            "it": "Pomodoro, mozzarella, melanzane grigliate, parmigiano",
+            "en": "Tomato, mozzarella, grilled aubergine, parmesan"
+          },
+          "prezzo": "8 / 10",
+          "tipico": false,
+          "vegetariano": true,
+          "allergeni": [
+            1,
+            7
+          ]
+        },
+        {
+          "nome": {
+            "it": "Napoletana",
+            "en": "Napoletana"
+          },
+          "descrizione": {
+            "it": "Pomodoro, mozzarella, capperi, acciughe",
+            "en": "Tomato, mozzarella, capers, anchovies"
+          },
+          "prezzo": "8 / 10",
+          "tipico": false,
+          "vegetariano": false,
+          "allergeni": [
+            1,
+            7,
+            4
+          ]
+        },
+        {
+          "nome": {
+            "it": "Imperiale",
+            "en": "Imperiale"
+          },
+          "descrizione": {
+            "it": "Pomodoro, mozzarella, funghi",
+            "en": "Tomato, mozzarella, mushrooms"
+          },
+          "prezzo": "8 / 10",
+          "tipico": false,
+          "vegetariano": true,
+          "allergeni": [
+            1,
+            7
+          ]
+        },
+        {
+          "nome": {
+            "it": "Canadese",
+            "en": "Canadese"
+          },
+          "descrizione": {
+            "it": "Pomodoro, mozzarella, würstel, cipolle",
+            "en": "Tomato, mozzarella, frankfurter, onions"
+          },
+          "prezzo": "8,50 / 10,50",
+          "tipico": false,
+          "vegetariano": false,
+          "allergeni": [
+            1,
+            7
+          ]
+        },
+        {
+          "nome": {
+            "it": "Sarda",
+            "en": "Sarda"
+          },
+          "descrizione": {
+            "it": "Pomodoro, mozzarella, salsiccia, cipolle",
+            "en": "Tomato, mozzarella, sausage, onions"
+          },
+          "prezzo": "8,50 / 10,50",
+          "tipico": false,
+          "vegetariano": false,
+          "allergeni": [
+            1,
+            7
+          ]
+        },
+        {
+          "nome": {
+            "it": "Patate",
+            "en": "Patate"
+          },
+          "descrizione": {
+            "it": "Pomodoro, mozzarella, patate fritte",
+            "en": "Tomato, mozzarella, fries"
+          },
+          "prezzo": "8,50 / 10,50",
+          "tipico": false,
+          "vegetariano": true,
+          "allergeni": [
+            1,
+            7
+          ]
+        },
+        {
+          "nome": {
+            "it": "Trentina",
+            "en": "Trentina"
+          },
+          "descrizione": {
+            "it": "Pomodoro, mozzarella, noci, radicchio",
+            "en": "Tomato, mozzarella, walnuts, radicchio"
+          },
+          "prezzo": "8,50 / 10,50",
+          "tipico": false,
+          "vegetariano": true,
+          "allergeni": [
+            1,
+            7,
+            8
+          ]
+        },
+        {
+          "nome": {
+            "it": "Nostromo",
+            "en": "Nostromo"
+          },
+          "descrizione": {
+            "it": "Pomodoro, mozzarella, tonno, cipolle",
+            "en": "Tomato, mozzarella, tuna, onions"
+          },
+          "prezzo": "9 / 11",
+          "tipico": false,
+          "vegetariano": false,
+          "allergeni": [
+            1,
+            7,
+            4
+          ]
+        },
+        {
+          "nome": {
+            "it": "Veneziana",
+            "en": "Veneziana"
+          },
+          "descrizione": {
+            "it": "Pomodoro, mozzarella, prosciutto cotto, funghi",
+            "en": "Tomato, mozzarella, cooked ham, mushrooms"
+          },
+          "prezzo": "9 / 11",
+          "tipico": false,
+          "vegetariano": false,
+          "allergeni": [
+            1,
+            7
+          ]
+        },
+        {
+          "nome": {
+            "it": "Antunna",
+            "en": "Antunna"
+          },
+          "descrizione": {
+            "it": "Pomodoro, mozzarella, funghi antunna",
+            "en": "Tomato, mozzarella, antunna mushrooms"
+          },
+          "prezzo": "9 / 11",
+          "tipico": false,
+          "vegetariano": true,
+          "allergeni": [
+            1,
+            7
+          ]
+        },
+        {
+          "nome": {
+            "it": "Parma",
+            "en": "Parma"
+          },
+          "descrizione": {
+            "it": "Pomodoro, mozzarella, prosciutto crudo",
+            "en": "Tomato, mozzarella, Parma ham"
+          },
+          "prezzo": "9 / 11",
+          "tipico": false,
+          "vegetariano": false,
+          "allergeni": [
+            1,
+            7
+          ]
+        },
+        {
+          "nome": {
+            "it": "Bismark",
+            "en": "Bismark"
+          },
+          "descrizione": {
+            "it": "Pomodoro, mozzarella, cipolla, uovo, pancetta",
+            "en": "Tomato, mozzarella, onion, egg, bacon"
+          },
+          "prezzo": "9 / 11",
+          "tipico": false,
+          "vegetariano": false,
+          "allergeni": [
+            1,
+            7,
+            3
+          ]
+        },
+        {
+          "nome": {
+            "it": "Diavola",
+            "en": "Diavola"
+          },
+          "descrizione": {
+            "it": "Pomodoro, mozzarella, salame piccante, olive, olio piccante",
+            "en": "Tomato, mozzarella, spicy salami, olives, chilli oil"
+          },
+          "prezzo": "9 / 11",
+          "tipico": false,
+          "vegetariano": false,
+          "allergeni": [
+            1,
+            7
+          ]
+        },
+        {
+          "nome": {
+            "it": "Calzone",
+            "en": "Calzone"
+          },
+          "descrizione": {
+            "it": "Pomodoro, mozzarella, prosciutto cotto, funghi",
+            "en": "Tomato, mozzarella, cooked ham, mushrooms"
+          },
+          "prezzo": "9 / 11",
+          "tipico": false,
+          "vegetariano": false,
+          "allergeni": [
+            1,
+            7
+          ]
+        },
+        {
+          "nome": {
+            "it": "Dello zio",
+            "en": "Dello zio"
+          },
+          "descrizione": {
+            "it": "Pomodoro, mozzarella, peretta, pomodoro fresco, basilico, olio extravergine, origano",
+            "en": "Tomato, mozzarella, peretta cheese, fresh tomato, basil, extra virgin olive oil, oregano"
+          },
+          "prezzo": "9 / 11",
+          "tipico": false,
+          "vegetariano": true,
+          "allergeni": [
+            1,
+            7
+          ]
+        },
+        {
+          "nome": {
+            "it": "Capricciosa",
+            "en": "Capricciosa"
+          },
+          "descrizione": {
+            "it": "Pomodoro, mozzarella, prosciutto, funghi, olive, capperi, acciughe",
+            "en": "Tomato, mozzarella, ham, mushrooms, olives, capers, anchovies"
+          },
+          "prezzo": "9,50 / 11,50",
+          "tipico": false,
+          "vegetariano": false,
+          "allergeni": [
+            1,
+            7,
+            4
+          ]
+        },
+        {
+          "nome": {
+            "it": "Quattro stagioni",
+            "en": "Four seasons"
+          },
+          "descrizione": {
+            "it": "Pomodoro, mozzarella, prosciutto cotto, olive, carciofi, funghi",
+            "en": "Tomato, mozzarella, cooked ham, olives, artichokes, mushrooms"
+          },
+          "prezzo": "9,50 / 11,50",
+          "tipico": false,
+          "vegetariano": false,
+          "allergeni": [
+            1,
+            7
+          ]
+        },
+        {
+          "nome": {
+            "it": "Calzone farcito",
+            "en": "Stuffed calzone"
+          },
+          "descrizione": {
+            "it": "Pomodoro, mozzarella, prosciutto cotto, salsiccia, funghi",
+            "en": "Tomato, mozzarella, cooked ham, sausage, mushrooms"
+          },
+          "prezzo": "9,50 / 11,50",
+          "tipico": false,
+          "vegetariano": false,
+          "allergeni": [
+            1,
+            7
+          ]
+        },
+        {
+          "nome": {
+            "it": "Norvegese",
+            "en": "Norvegese"
+          },
+          "descrizione": {
+            "it": "Pomodoro, mozzarella, panna, salmone",
+            "en": "Tomato, mozzarella, cream, salmon"
+          },
+          "prezzo": "9,50 / 11,50",
+          "tipico": false,
+          "vegetariano": false,
+          "allergeni": [
+            1,
+            7,
+            4
+          ]
+        },
+        {
+          "nome": {
+            "it": "Speciale",
+            "en": "Speciale"
+          },
+          "descrizione": {
+            "it": "Mozzarella, salsiccia fresca, funghi antunna",
+            "en": "Mozzarella, fresh sausage, antunna mushrooms"
+          },
+          "prezzo": "9,50 / 11,50",
+          "tipico": false,
+          "vegetariano": false,
+          "allergeni": [
+            1,
+            7
+          ]
+        },
+        {
+          "nome": {
+            "it": "Campagnola",
+            "en": "Campagnola"
+          },
+          "descrizione": {
+            "it": "Pomodoro, mozzarella, pecorino, salsiccia, speck",
+            "en": "Tomato, mozzarella, pecorino, sausage, speck"
+          },
+          "prezzo": "9,50 / 11,50",
+          "tipico": false,
+          "vegetariano": false,
+          "allergeni": [
+            1,
+            7
+          ]
+        },
+        {
+          "nome": {
+            "it": "Genovese",
+            "en": "Genovese"
+          },
+          "descrizione": {
+            "it": "Mozzarella, pancetta, grana, pesto",
+            "en": "Mozzarella, bacon, grana, pesto"
+          },
+          "prezzo": "9,50 / 11,50",
+          "tipico": false,
+          "vegetariano": false,
+          "allergeni": [
+            1,
+            7,
+            8
+          ]
+        },
+        {
+          "nome": {
+            "it": "Bufalina",
+            "en": "Bufalina"
+          },
+          "descrizione": {
+            "it": "Pomodoro, mozzarella di bufala, pomodorini, basilico",
+            "en": "Tomato, buffalo mozzarella, cherry tomatoes, basil"
+          },
+          "prezzo": "10 / 12",
+          "tipico": false,
+          "vegetariano": true,
+          "allergeni": [
+            1,
+            7
+          ]
+        },
+        {
+          "nome": {
+            "it": "Quattro formaggi",
+            "en": "Four cheeses"
+          },
+          "descrizione": {
+            "it": "Mozzarella, gorgonzola, pecorino, parmigiano",
+            "en": "Mozzarella, gorgonzola, pecorino, parmesan"
+          },
+          "prezzo": "10 / 12",
+          "tipico": false,
+          "vegetariano": true,
+          "allergeni": [
+            1,
+            7
+          ]
+        },
+        {
+          "nome": {
+            "it": "Sassarese",
+            "en": "Sassarese"
+          },
+          "descrizione": {
+            "it": "Pomodoro, mozzarella, melanzane al forno, pomodorini",
+            "en": "Tomato, mozzarella, baked aubergine, cherry tomatoes"
+          },
+          "prezzo": "10 / 12",
+          "tipico": false,
+          "vegetariano": true,
+          "allergeni": [
+            1,
+            7
+          ]
+        },
+        {
+          "nome": {
+            "it": "Ortolana",
+            "en": "Ortolana"
+          },
+          "descrizione": {
+            "it": "Pomodoro, mozzarella, melanzane, peperoni, zucchine",
+            "en": "Tomato, mozzarella, aubergine, peppers, courgettes"
+          },
+          "prezzo": "10 / 12",
+          "tipico": false,
+          "vegetariano": true,
+          "allergeni": [
+            1,
+            7
+          ]
+        },
+        {
+          "nome": {
+            "it": "Trevisana",
+            "en": "Trevisana"
+          },
+          "descrizione": {
+            "it": "Pomodoro, mozzarella, radicchio, belga, gorgonzola",
+            "en": "Tomato, mozzarella, radicchio, endive, gorgonzola"
+          },
+          "prezzo": "10 / 12",
+          "tipico": false,
+          "vegetariano": true,
+          "allergeni": [
+            1,
+            7
+          ]
+        },
+        {
+          "nome": {
+            "it": "Bresaola",
+            "en": "Bresaola"
+          },
+          "descrizione": {
+            "it": "Pomodoro, mozzarella, bresaola, rucola, scaglie di grana",
+            "en": "Tomato, mozzarella, bresaola, rocket, grana flakes"
+          },
+          "prezzo": "10,50 / 12,50",
+          "tipico": false,
+          "vegetariano": false,
+          "allergeni": [
+            1,
+            7
+          ]
+        },
+        {
+          "nome": {
+            "it": "Mare e monti",
+            "en": "Mare e monti"
+          },
+          "descrizione": {
+            "it": "Mozzarella, broccoli, gamberetti",
+            "en": "Mozzarella, broccoli, shrimps"
+          },
+          "prezzo": "11 / 13",
+          "tipico": false,
+          "vegetariano": false,
+          "allergeni": [
+            1,
+            7,
+            2
+          ]
+        },
+        {
+          "nome": {
+            "it": "Vegetariana",
+            "en": "Vegetarian"
+          },
+          "descrizione": {
+            "it": "Pomodoro, mozzarella, peperoni, zucchine grigliate, melanzane, radicchio, belga",
+            "en": "Tomato, mozzarella, peppers, grilled courgettes, aubergine, radicchio, endive"
+          },
+          "prezzo": "11 / 13",
+          "tipico": false,
+          "vegetariano": true,
+          "allergeni": [
+            1,
+            7
+          ]
+        },
+        {
+          "nome": {
+            "it": "Stracchino",
+            "en": "Stracchino"
+          },
+          "descrizione": {
+            "it": "Mozzarella, prosciutto crudo, rucola, stracchino",
+            "en": "Mozzarella, Parma ham, rocket, stracchino cheese"
+          },
+          "prezzo": "11 / 13",
+          "tipico": false,
+          "vegetariano": false,
+          "allergeni": [
+            1,
+            7
+          ]
+        },
+        {
+          "nome": {
+            "it": "Aragon",
+            "en": "Aragon"
+          },
+          "descrizione": {
+            "it": "Pomodoro, mozzarella, prosciutto crudo, pomodoro a fette, rucola, scaglie di grana",
+            "en": "Tomato, mozzarella, Parma ham, sliced tomato, rocket, grana flakes"
+          },
+          "prezzo": "11 / 13",
+          "tipico": false,
+          "vegetariano": false,
+          "allergeni": [
+            1,
+            7
+          ]
+        },
+        {
+          "nome": {
+            "it": "Girasol",
+            "en": "Girasol"
+          },
+          "descrizione": {
+            "it": "Mozzarella di bufala, mais, olive, pomodorini",
+            "en": "Buffalo mozzarella, sweetcorn, olives, cherry tomatoes"
+          },
+          "prezzo": "11 / 13",
+          "tipico": false,
+          "vegetariano": true,
+          "allergeni": [
+            1,
+            7
+          ]
+        },
+        {
+          "nome": {
+            "it": "Messicano",
+            "en": "Messicano"
+          },
+          "descrizione": {
+            "it": "Pomodoro, mozzarella, fagioli, cipolla, salsiccia fresca, olio piccante",
+            "en": "Tomato, mozzarella, beans, onion, fresh sausage, chilli oil"
+          },
+          "prezzo": "11 / 13",
+          "tipico": false,
+          "vegetariano": false,
+          "allergeni": [
+            1,
+            7
+          ]
+        },
+        {
+          "nome": {
+            "it": "Quattro mori",
+            "en": "Quattro mori"
+          },
+          "descrizione": {
+            "it": "Mozzarella, salsiccia fresca, patate al forno, provola affumicata",
+            "en": "Mozzarella, fresh sausage, roast potatoes, smoked provola"
+          },
+          "prezzo": "11 / 13",
+          "tipico": false,
+          "vegetariano": false,
+          "allergeni": [
+            1,
+            7
+          ]
+        },
+        {
+          "nome": {
+            "it": "Rustica",
+            "en": "Rustica"
+          },
+          "descrizione": {
+            "it": "Mozzarella di bufala, spinaci, pancetta",
+            "en": "Buffalo mozzarella, spinach, bacon"
+          },
+          "prezzo": "11 / 13",
+          "tipico": false,
+          "vegetariano": false,
+          "allergeni": [
+            1,
+            7
+          ]
+        },
+        {
+          "nome": {
+            "it": "Furia",
+            "en": "Furia"
+          },
+          "descrizione": {
+            "it": "Mozzarella, cavallo, scamorza affumicata, olive",
+            "en": "Mozzarella, horse meat, smoked scamorza, olives"
+          },
+          "prezzo": "11,50 / 13,50",
+          "tipico": false,
+          "vegetariano": false,
+          "allergeni": [
+            1,
+            7
+          ]
+        },
+        {
+          "nome": {
+            "it": "Boscaiola",
+            "en": "Boscaiola"
+          },
+          "descrizione": {
+            "it": "Mozzarella, porcini, funghi antunna, champignon, cipolla",
+            "en": "Mozzarella, porcini, antunna mushrooms, champignons, onion"
+          },
+          "prezzo": "11,50 / 13,50",
+          "tipico": false,
+          "vegetariano": true,
+          "allergeni": [
+            1,
+            7
+          ]
+        },
+        {
+          "nome": {
+            "it": "Mortadella",
+            "en": "Mortadella"
+          },
+          "descrizione": {
+            "it": "Mozzarella, mortadella, stracchino, granella di pistacchio",
+            "en": "Mozzarella, mortadella, stracchino cheese, chopped pistachios"
+          },
+          "prezzo": "12 / 14",
+          "tipico": false,
+          "vegetariano": false,
+          "allergeni": [
+            1,
+            7,
+            8
+          ]
+        },
+        {
+          "nome": {
+            "it": "Friarielli",
+            "en": "Friarielli"
+          },
+          "descrizione": {
+            "it": "Mozzarella, salsiccia fresca, friarielli, scaglie di grana",
+            "en": "Mozzarella, fresh sausage, broccoli rabe, grana flakes"
+          },
+          "prezzo": "12 / 14",
+          "tipico": false,
+          "vegetariano": false,
+          "allergeni": [
+            1,
+            7
+          ]
+        },
+        {
+          "nome": {
+            "it": "Pescatora",
+            "en": "Pescatora"
+          },
+          "descrizione": {
+            "it": "Pomodoro, mozzarella, frutti di mare",
+            "en": "Tomato, mozzarella, seafood"
+          },
+          "prezzo": "12,50 / 14,50",
+          "tipico": false,
+          "vegetariano": false,
+          "allergeni": [
+            1,
+            7,
+            2,
+            14
+          ]
+        },
+        {
+          "nome": {
+            "it": "Sfiziosa",
+            "en": "Sfiziosa"
+          },
+          "descrizione": {
+            "it": "Mozzarella, melanzane fritte, salsiccia fresca, ricotta mustia",
+            "en": "Mozzarella, fried aubergine, fresh sausage, smoked ricotta"
+          },
+          "prezzo": "13 / 15",
+          "tipico": false,
+          "vegetariano": false,
+          "allergeni": [
+            1,
+            7
+          ]
+        },
+        {
+          "nome": {
+            "it": "Del pizzaiolo",
+            "en": "Del pizzaiolo"
+          },
+          "descrizione": {
+            "it": "Pomodoro, mozzarella di bufala, porcini, prosciutto crudo, grana",
+            "en": "Tomato, buffalo mozzarella, porcini, Parma ham, grana"
+          },
+          "prezzo": "13 / 15",
+          "tipico": false,
+          "vegetariano": false,
+          "allergeni": [
+            1,
+            7
+          ]
+        }
+      ]
+    },
+    {
+      "id": "dolci",
+      "nome": {
+        "it": "Dolci",
+        "en": "Desserts"
+      },
+      "piatti": [
+        {
+          "nome": {
+            "it": "Sorbetto al limone",
+            "en": "Lemon sorbet"
+          },
+          "prezzo": 4,
+          "tipico": false,
+          "vegetariano": true,
+          "allergeni": []
+        },
+        {
+          "nome": {
+            "it": "Seadas",
+            "en": "Seadas"
+          },
+          "descrizione": {
+            "it": "Pasta fritta ripiena di formaggio di pecora, con miele",
+            "en": "Fried pastry filled with sheep's cheese, with honey"
+          },
+          "prezzo": "6 / 7",
+          "tipico": true,
+          "vegetariano": true,
+          "allergeni": [
+            1,
+            7
+          ]
+        },
+        {
+          "nome": {
+            "it": "Seadas nera al carbone vegetale",
+            "en": "Black seadas with vegetable charcoal"
+          },
+          "prezzo": 7,
+          "tipico": true,
+          "vegetariano": true,
+          "allergeni": [
+            1,
+            7
+          ]
+        },
+        {
+          "nome": {
+            "it": "Crema catalana",
+            "en": "Crema catalana"
+          },
+          "prezzo": 6,
+          "tipico": false,
+          "vegetariano": true,
+          "allergeni": [
+            3,
+            7
+          ]
+        },
+        {
+          "nome": {
+            "it": "Tiramisù",
+            "en": "Tiramisù"
+          },
+          "prezzo": 6,
+          "tipico": false,
+          "vegetariano": true,
+          "allergeni": [
+            1,
+            3,
+            7
+          ]
+        },
+        {
+          "nome": {
+            "it": "Sfogliatina di mele con gelato alla vaniglia",
+            "en": "Apple puff pastry with vanilla ice cream"
+          },
+          "prezzo": 7,
+          "tipico": false,
+          "vegetariano": true,
+          "allergeni": [
+            1,
+            3,
+            7
+          ]
+        },
+        {
+          "nome": {
+            "it": "Semifreddo al torroncino con crema al pistacchio",
+            "en": "Nougat semifreddo with pistachio cream"
+          },
+          "prezzo": 7,
+          "tipico": false,
+          "vegetariano": true,
+          "allergeni": [
+            3,
+            7,
+            8
+          ]
+        },
+        {
+          "nome": {
+            "it": "Tortino al cioccolato con gelato al fior di latte",
+            "en": "Chocolate lava cake with fior di latte ice cream"
+          },
+          "prezzo": 7,
+          "tipico": false,
+          "vegetariano": true,
+          "allergeni": [
+            1,
+            3,
+            7
+          ]
+        },
+        {
+          "nome": {
+            "it": "Cheesecake con Nutella o caramello salato",
+            "en": "Cheesecake with Nutella or salted caramel"
+          },
+          "prezzo": 7,
+          "tipico": false,
+          "vegetariano": true,
+          "allergeni": [
+            1,
+            7,
+            8
+          ]
+        },
+        {
+          "nome": {
+            "it": "Torta sbrisolona ricotta e Nutella",
+            "en": "Sbrisolona cake with ricotta and Nutella"
+          },
+          "prezzo": 7,
+          "tipico": false,
+          "vegetariano": true,
+          "allergeni": [
+            1,
+            3,
+            7,
+            8
+          ]
+        }
+      ]
+    },
+    {
+      "id": "birre",
+      "nome": {
+        "it": "Birre",
+        "en": "Beers"
+      },
+      "piatti": [
+        {
+          "nome": {
+            "it": "Ustersbacher 0,20 l",
+            "en": "Ustersbacher 0.20 l"
+          },
+          "prezzo": 3,
+          "tipico": false,
+          "vegetariano": false,
+          "allergeni": [
+            1
+          ]
+        },
+        {
+          "nome": {
+            "it": "Ustersbacher 0,40 l",
+            "en": "Ustersbacher 0.40 l"
+          },
+          "prezzo": 5,
+          "tipico": false,
+          "vegetariano": false,
+          "allergeni": [
+            1
+          ]
+        },
+        {
+          "nome": {
+            "it": "Ustersbacher 1 l",
+            "en": "Ustersbacher 1 l"
+          },
+          "prezzo": 11,
+          "tipico": false,
+          "vegetariano": false,
+          "allergeni": [
+            1
+          ]
+        },
+        {
+          "nome": {
+            "it": "Birra Peroni",
+            "en": "Peroni beer"
+          },
+          "prezzo": 5,
+          "tipico": false,
+          "vegetariano": false,
+          "allergeni": [
+            1
+          ]
+        },
+        {
+          "nome": {
+            "it": "Nastro Azzurro Peroni 0,62 l (bottiglia)",
+            "en": "Peroni Nastro Azzurro 0.62 l (bottle)"
+          },
+          "prezzo": 6,
+          "tipico": false,
+          "vegetariano": false,
+          "allergeni": [
+            1
+          ]
+        },
+        {
+          "nome": {
+            "it": "Daura (spagnola)",
+            "en": "Daura (Spanish)"
+          },
+          "prezzo": 5,
+          "tipico": false,
+          "vegetariano": false,
+          "allergeni": [
+            1
+          ]
+        },
+        {
+          "nome": {
+            "it": "König non filtrata 0,30 l",
+            "en": "König unfiltered 0.30 l"
+          },
+          "prezzo": 5,
+          "tipico": false,
+          "vegetariano": false,
+          "allergeni": [
+            1
+          ]
+        },
+        {
+          "nome": {
+            "it": "König non filtrata 1 l",
+            "en": "König unfiltered 1 l"
+          },
+          "prezzo": 12,
+          "tipico": false,
+          "vegetariano": false,
+          "allergeni": [
+            1
+          ]
+        },
+        {
+          "nome": {
+            "it": "Theresianer non filtrata (artigianale)",
+            "en": "Theresianer unfiltered (craft)"
+          },
+          "prezzo": 5,
+          "tipico": false,
+          "vegetariano": false,
+          "allergeni": [
+            1
+          ]
+        },
+        {
+          "nome": {
+            "it": "Ichnusa Radler al limone",
+            "en": "Ichnusa lemon Radler"
+          },
+          "prezzo": 4,
+          "tipico": false,
+          "vegetariano": false,
+          "allergeni": [
+            1
+          ]
+        },
+        {
+          "nome": {
+            "it": "Birra analcolica 0,33 l",
+            "en": "Alcohol-free beer 0.33 l"
+          },
+          "prezzo": 4,
+          "tipico": false,
+          "vegetariano": false,
+          "allergeni": [
+            1
+          ]
+        },
+        {
+          "nome": {
+            "it": "Moretti La Rossa 0,33 l (bottiglia)",
+            "en": "Moretti La Rossa 0.33 l (bottle)"
+          },
+          "prezzo": 4.5,
+          "tipico": false,
+          "vegetariano": false,
+          "allergeni": [
+            1
+          ]
+        },
+        {
+          "nome": {
+            "it": "Paulaner Weiss 0,30 l",
+            "en": "Paulaner Weiss 0.30 l"
+          },
+          "prezzo": 5,
+          "tipico": false,
+          "vegetariano": false,
+          "allergeni": [
+            1
+          ]
+        },
+        {
+          "nome": {
+            "it": "Paulaner Weiss 1 l",
+            "en": "Paulaner Weiss 1 l"
+          },
+          "prezzo": 12,
+          "tipico": false,
+          "vegetariano": false,
+          "allergeni": [
+            1
+          ]
+        },
+        {
+          "nome": {
+            "it": "Friska Blanche 0,375 l (artigianale)",
+            "en": "Friska Blanche 0.375 l (craft)"
+          },
+          "prezzo": 8,
+          "tipico": false,
+          "vegetariano": false,
+          "allergeni": [
+            1
+          ]
+        },
+        {
+          "nome": {
+            "it": "Friska Blanche 0,75 l (artigianale)",
+            "en": "Friska Blanche 0.75 l (craft)"
+          },
+          "prezzo": 14,
+          "tipico": false,
+          "vegetariano": false,
+          "allergeni": [
+            1
+          ]
+        },
+        {
+          "nome": {
+            "it": "Stella del diavolo, rossa 0,75 l (artigianale)",
+            "en": "Stella del diavolo, red ale 0.75 l (craft)"
+          },
+          "prezzo": 14,
+          "tipico": false,
+          "vegetariano": false,
+          "allergeni": [
+            1
+          ]
+        },
+        {
+          "nome": {
+            "it": "Tùvi Tùvi, bionda 0,75 l (artigianale)",
+            "en": "Tùvi Tùvi, blonde 0.75 l (craft)"
+          },
+          "prezzo": 14,
+          "tipico": false,
+          "vegetariano": false,
+          "allergeni": [
+            1
+          ]
+        },
+        {
+          "nome": {
+            "it": "Duenna, bionda 0,75 l (artigianale)",
+            "en": "Duenna, blonde 0.75 l (craft)"
+          },
+          "prezzo": 14,
+          "tipico": false,
+          "vegetariano": false,
+          "allergeni": [
+            1
+          ]
+        }
+      ]
+    },
+    {
+      "id": "bibite",
+      "nome": {
+        "it": "Bibite e caffetteria",
+        "en": "Soft drinks and coffee"
+      },
+      "piatti": [
+        {
+          "nome": {
+            "it": "Acqua naturale 0,75 l",
+            "en": "Still water 0.75 l"
+          },
+          "prezzo": 3,
+          "tipico": false,
+          "vegetariano": false,
+          "allergeni": []
+        },
+        {
+          "nome": {
+            "it": "Acqua frizzante San Martino 0,75 l",
+            "en": "San Martino sparkling water 0.75 l"
+          },
+          "prezzo": 3,
+          "tipico": false,
+          "vegetariano": false,
+          "allergeni": []
+        },
+        {
+          "nome": {
+            "it": "Coca-Cola, Coca-Cola Zero, Coca-Cola senza caffeina",
+            "en": "Coca-Cola, Coke Zero, caffeine-free Coke"
+          },
+          "prezzo": 3.5,
+          "tipico": false,
+          "vegetariano": false,
+          "allergeni": []
+        },
+        {
+          "nome": {
+            "it": "Aranciata, Sprite, tè",
+            "en": "Orange soda, Sprite, iced tea"
+          },
+          "prezzo": 3.5,
+          "tipico": false,
+          "vegetariano": false,
+          "allergeni": []
+        },
+        {
+          "nome": {
+            "it": "Caffè",
+            "en": "Espresso"
+          },
+          "prezzo": 1.5,
+          "tipico": false,
+          "vegetariano": false,
+          "allergeni": []
+        },
+        {
+          "nome": {
+            "it": "Caffè d'orzo",
+            "en": "Barley coffee"
+          },
+          "prezzo": 1.5,
+          "tipico": false,
+          "vegetariano": false,
+          "allergeni": [
+            1
+          ]
+        },
+        {
+          "nome": {
+            "it": "Ginseng",
+            "en": "Ginseng coffee"
+          },
+          "prezzo": 2,
+          "tipico": false,
+          "vegetariano": false,
+          "allergeni": [
+            7
+          ]
+        },
+        {
+          "nome": {
+            "it": "Cappuccino",
+            "en": "Cappuccino"
+          },
+          "prezzo": 2,
+          "tipico": false,
+          "vegetariano": false,
+          "allergeni": [
+            7
+          ]
+        }
+      ]
+    },
+    {
+      "id": "cocktail",
+      "nome": {
+        "it": "Aperitivi e cocktail",
+        "en": "Aperitifs and cocktails"
+      },
+      "piatti": [
+        {
+          "nome": {
+            "it": "Aperol Spritz",
+            "en": "Aperol Spritz"
+          },
+          "prezzo": 5,
+          "tipico": false,
+          "vegetariano": false,
+          "allergeni": [
+            12
+          ]
+        },
+        {
+          "nome": {
+            "it": "Havana e cola",
+            "en": "Havana and cola"
+          },
+          "prezzo": 7,
+          "tipico": false,
+          "vegetariano": false,
+          "allergeni": []
+        },
+        {
+          "nome": {
+            "it": "Gin tonic",
+            "en": "Gin and tonic"
+          },
+          "prezzo": 7,
+          "tipico": false,
+          "vegetariano": false,
+          "allergeni": []
+        },
+        {
+          "nome": {
+            "it": "Gin Hendrick's, tonica Fever-Tree",
+            "en": "Hendrick's gin, Fever-Tree tonic"
+          },
+          "prezzo": 9,
+          "tipico": false,
+          "vegetariano": false,
+          "allergeni": []
+        },
+        {
+          "nome": {
+            "it": "Gin Tanqueray, tonica Fever-Tree",
+            "en": "Tanqueray gin, Fever-Tree tonic"
+          },
+          "prezzo": 9,
+          "tipico": false,
+          "vegetariano": false,
+          "allergeni": []
+        },
+        {
+          "nome": {
+            "it": "Gin Soero, tonica Fever-Tree",
+            "en": "Soero gin, Fever-Tree tonic"
+          },
+          "prezzo": 9,
+          "tipico": false,
+          "vegetariano": false,
+          "allergeni": []
+        },
+        {
+          "nome": {
+            "it": "Tanqueray 0.0 analcolico e tonica",
+            "en": "Tanqueray 0.0 alcohol-free and tonic"
+          },
+          "prezzo": 8,
+          "tipico": false,
+          "vegetariano": false,
+          "allergeni": []
+        }
+      ]
+    },
+    {
+      "id": "distillati",
+      "nome": {
+        "it": "Whisky, rum e grappe",
+        "en": "Whisky, rum and grappa"
+      },
+      "piatti": [
+        {
+          "nome": {
+            "it": "Lagavulin 16 anni",
+            "en": "Lagavulin 16 years"
+          },
+          "prezzo": 8,
+          "tipico": false,
+          "vegetariano": false,
+          "allergeni": []
+        },
+        {
+          "nome": {
+            "it": "Oban 14 anni",
+            "en": "Oban 14 years"
+          },
+          "prezzo": 7,
+          "tipico": false,
+          "vegetariano": false,
+          "allergeni": []
+        },
+        {
+          "nome": {
+            "it": "Laphroaig 10 anni",
+            "en": "Laphroaig 10 years"
+          },
+          "prezzo": 6,
+          "tipico": false,
+          "vegetariano": false,
+          "allergeni": []
+        },
+        {
+          "nome": {
+            "it": "Talisker",
+            "en": "Talisker"
+          },
+          "prezzo": 6,
+          "tipico": false,
+          "vegetariano": false,
+          "allergeni": []
+        },
+        {
+          "nome": {
+            "it": "Jack Daniel's, Glen Grant, Jameson",
+            "en": "Jack Daniel's, Glen Grant, Jameson"
+          },
+          "prezzo": 5,
+          "tipico": false,
+          "vegetariano": false,
+          "allergeni": []
+        },
+        {
+          "nome": {
+            "it": "Rum Zacapa 23 anni",
+            "en": "Zacapa 23 years rum"
+          },
+          "prezzo": 8,
+          "tipico": false,
+          "vegetariano": false,
+          "allergeni": []
+        },
+        {
+          "nome": {
+            "it": "Rum Diplomatico Reserva Exclusiva",
+            "en": "Diplomatico Reserva Exclusiva rum"
+          },
+          "prezzo": 8,
+          "tipico": false,
+          "vegetariano": false,
+          "allergeni": []
+        },
+        {
+          "nome": {
+            "it": "Rum Don Papa, Matusalem 15 anni",
+            "en": "Don Papa, Matusalem 15 years rum"
+          },
+          "prezzo": 7,
+          "tipico": false,
+          "vegetariano": false,
+          "allergeni": []
+        },
+        {
+          "nome": {
+            "it": "Rum Matusalem 7 anni, Pampero Aniversario",
+            "en": "Matusalem 7 years, Pampero Aniversario rum"
+          },
+          "prezzo": 6,
+          "tipico": false,
+          "vegetariano": false,
+          "allergeni": []
+        },
+        {
+          "nome": {
+            "it": "Rum Havana 7, Pampero",
+            "en": "Havana 7, Pampero rum"
+          },
+          "prezzo": 5,
+          "tipico": false,
+          "vegetariano": false,
+          "allergeni": []
+        },
+        {
+          "nome": {
+            "it": "Grappe aromatizzate alla frutta",
+            "en": "Fruit-flavoured grappa"
+          },
+          "descrizione": {
+            "it": "Melone, mela, limone, pesca, pera, mirtillo, cannella, gianduia, fior di latte, liquirizia, ananas, marron glacé, lampone, cioccolato fondente",
+            "en": "Melon, apple, lemon, peach, pear, blueberry, cinnamon, gianduja, fior di latte, liquorice, pineapple, marron glacé, raspberry, dark chocolate"
+          },
+          "prezzo": 4.5,
+          "tipico": false,
+          "vegetariano": false,
+          "allergeni": []
+        },
+        {
+          "nome": {
+            "it": "Acquaviti Rau",
+            "en": "Rau fruit brandies"
+          },
+          "descrizione": {
+            "it": "Mele, corbezzolo, pere, moscato e malvasia di Bosa, vermentino, carignano",
+            "en": "Apple, strawberry tree, pear, Bosa moscato and malvasia, vermentino, carignano"
+          },
+          "prezzo": 4.5,
+          "tipico": false,
+          "vegetariano": false,
+          "allergeni": []
+        },
+        {
+          "nome": {
+            "it": "Grappe sarde: Tiu Marò, Alexander, Rigatteri",
+            "en": "Sardinian grappa: Tiu Marò, Alexander, Rigatteri"
+          },
+          "prezzo": 4.5,
+          "tipico": false,
+          "vegetariano": false,
+          "allergeni": []
+        },
+        {
+          "nome": {
+            "it": "Grappa di Turriga, Argiolas",
+            "en": "Argiolas Turriga grappa"
+          },
+          "prezzo": 7,
+          "tipico": false,
+          "vegetariano": false,
+          "allergeni": []
+        },
+        {
+          "nome": {
+            "it": "Grappa La Baccherina, Santadi",
+            "en": "Santadi La Baccherina grappa"
+          },
+          "prezzo": 6,
+          "tipico": false,
+          "vegetariano": false,
+          "allergeni": []
+        },
+        {
+          "nome": {
+            "it": "Grappa Marchese di Villamarina, Sella & Mosca",
+            "en": "Sella & Mosca Marchese di Villamarina grappa"
+          },
+          "prezzo": 6,
+          "tipico": false,
+          "vegetariano": false,
+          "allergeni": []
+        },
+        {
+          "nome": {
+            "it": "Marc de Champagne, Moët & Chandon",
+            "en": "Moët & Chandon Marc de Champagne"
+          },
+          "prezzo": 8,
+          "tipico": false,
+          "vegetariano": false,
+          "allergeni": []
+        },
+        {
+          "nome": {
+            "it": "Amari e digestivi",
+            "en": "Amari and digestifs"
+          },
+          "prezzo": 4,
+          "tipico": false,
+          "vegetariano": false,
+          "allergeni": []
+        }
+      ]
+    }
+  ]
+}
