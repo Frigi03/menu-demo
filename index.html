@@ -4,6 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
 <title>Menu</title>
+<link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
 <meta name="description" content="Menu digitale in italiano e inglese, con allergeni.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Young+Serif&family=Figtree:wght@400;500;600;700&display=swap">
@@ -60,6 +61,8 @@ ul.dishes{list-style:none;margin:0;padding:0}
 .legend ol{columns:2;column-gap:20px;padding-left:20px;margin:0}
 .legend p{margin:12px 0 0}
 footer{margin-top:28px;text-align:center;font-size:13px;color:var(--muted)}
+footer a{color:var(--muted);text-decoration:none;display:inline-flex;align-items:center;gap:6px;font-weight:600}
+footer a img{width:18px;height:18px;border-radius:4px}
 .err{padding:40px 0;color:var(--muted)}
 :focus-visible{outline:2px solid var(--sea);outline-offset:2px}
 @media (max-width:380px){.legend ol{columns:1}}
@@ -98,12 +101,12 @@ const T = {
   it:{veg:"Solo vegetariani", glu:"Senza glutine", typ:"Tipico sardo", vg:"Vegetariano", todayT:"Piatto del giorno",
       todayS:"Chiedi al personale di sala per la disponibilità", al:"Allergeni", leg:"Allergeni (Reg. UE 1169/2011)",
       legNote:"I numeri accanto ai piatti indicano gli allergeni presenti. Per intolleranze o allergie chiedi sempre al personale.",
-      empty:"Nessun piatto con questi filtri.", foot:"Menu digitale realizzato da Frigi", demo:"MENU DIMOSTRATIVO · locale e piatti inventati",
+      empty:"Nessun piatto con questi filtri.", foot:"Menu digitale di", demo:"MENU DIMOSTRATIVO · locale e piatti inventati",
       err:"Menu non disponibile al momento. Chiedi al personale il menu cartaceo."},
   en:{veg:"Vegetarian only", glu:"Gluten free", typ:"Sardinian classic", vg:"Vegetarian", todayT:"Dish of the day",
       todayS:"Ask our staff for availability", al:"Allergens", leg:"Allergens (EU Reg. 1169/2011)",
       legNote:"Numbers next to each dish show the allergens it contains. Please always tell our staff about allergies or intolerances.",
-      empty:"No dishes match these filters.", foot:"Digital menu by Frigi", demo:"DEMO MENU · fictional restaurant and dishes",
+      empty:"No dishes match these filters.", foot:"Digital menu by", demo:"DEMO MENU · fictional restaurant and dishes",
       err:"Menu currently unavailable. Please ask our staff for the printed menu."}
 };
 const ALLERGENI = {
@@ -152,7 +155,7 @@ function render(){
       </li>`; }).join("")}</ul></section>`;
   }).join("") || `<p class="cat-note" style="padding-top:20px">${esc(t.empty)}</p>`;
   $("legend").innerHTML = `<h2>${esc(t.leg)}</h2><ol>${ALLERGENI[lang].map(a => `<li>${esc(a)}</li>`).join("")}</ol><p>${esc(t.legNote)}</p>`;
-  $("foot").textContent = t.foot;
+  $("foot").innerHTML = `${esc(t.foot)} <a href="https://frigi03.github.io/menu-demo/servizio/" target="_blank" rel="noopener"><img src="https://frigi03.github.io/menu-demo/assets/favicon.svg" alt="">su menu</a>`;
   spy();
 }
 function spy(){

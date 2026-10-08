@@ -1,4 +1,4 @@
-# Menu digitali di Frigi
+# su menu · menu digitali di Frigi
 
 Menu digitali bilingui (italiano e inglese) per ristoranti e pizzerie, pubblicati gratis con GitHub Pages.
 

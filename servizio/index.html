@@ -3,7 +3,8 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
-<title>Frigi · Menu digitali per ristoranti in Sardegna</title>
+<title>su menu · Menu digitali per ristoranti in Sardegna</title>
+<link rel="icon" href="../assets/favicon.svg" type="image/svg+xml">
 <meta name="description" content="Menu digitali con QR code per ristoranti, pizzerie e bar in Sardegna: italiano e inglese, allergeni, aggiornamenti in giornata. Prova gratuita.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Young+Serif&family=Figtree:wght@400;500;600;700&display=swap">
@@ -34,6 +35,12 @@ a{color:var(--sea)}
 .btn.primary{background:var(--sea);color:#fff}
 .btn.ghost{color:var(--sea);background:transparent}
 :focus-visible{outline:3px solid var(--saffron);outline-offset:3px}
+
+/* marchio */
+.brandbar{display:flex;align-items:center;gap:12px;padding-top:22px;text-decoration:none;color:var(--ink)}
+.brandbar img{width:44px;height:44px;display:block}
+.brandbar b{font-family:var(--f-display);font-weight:400;font-size:28px;line-height:1}
+.brandbar small{display:block;font-size:11px;font-weight:700;letter-spacing:.14em;text-transform:uppercase;color:var(--saffron);margin-top:3px}
 
 /* hero */
 .hero{display:grid;grid-template-columns:1.15fr .85fr;gap:40px;align-items:center;padding-block:48px 36px}
@@ -110,9 +117,10 @@ footer{padding-block:28px 40px;font-size:13.5px;color:var(--muted);text-align:ce
 <body>
 <div class="wrap">
 
+  <a class="brandbar" href="./" aria-label="su menu, menu digitali in Sardegna"><img src="../assets/su-menu-marchio.svg" alt=""><span><b>su menu</b><small>menu digitali · Sardegna</small></span></a>
+
   <header class="hero">
     <div class="hero-text">
-      <div class="eyebrow">Menu digitali · Sardegna</div>
       <h1>Il vostro menu, leggibile da ogni telefono. In italiano e in inglese.</h1>
       <p class="lead">Un QR code sul tavolo e il cliente vede piatti, prezzi e allergeni, nella sua lingua. Quando cambia un piatto, lo aggiorno io in giornata.</p>
       <div class="ctas">
@@ -185,7 +193,7 @@ footer{padding-block:28px 40px;font-size:13.5px;color:var(--muted);text-align:ce
       <div>
         <h2 id="me-h" style="margin-bottom:12px">Chi sono</h2>
         <p>Sono Frigi, di Sinnai. Lavoro in sala nel turismo da qualche stagione, quindi conosco da vicino cosa succede quando un turista non riesce a leggere il menu.</p>
-        <p>Per questo realizzo menu digitali semplici, veloci da leggere e facili da aggiornare, per ristoranti, pizzerie e bar della Sardegna. Lavoro a distanza: tutto si fa via email o telefono.</p>
+        <p>Per questo ho creato <b>su menu</b>: menu digitali semplici, veloci da leggere e facili da aggiornare, per ristoranti, pizzerie e bar della Sardegna. Lavoro a distanza: tutto si fa via email o telefono.</p>
       </div>
     </div>
   </section>
@@ -211,7 +219,7 @@ footer{padding-block:28px 40px;font-size:13.5px;color:var(--muted);text-align:ce
     </div>
   </section>
 
-  <footer>Frigi · Menu digitali · Sinnai, Sardegna</footer>
+  <footer>su menu · menu digitali di Frigi · Sinnai, Sardegna</footer>
 </div>
 <script>
 document.getElementById("copy").addEventListener("click", async e => {
