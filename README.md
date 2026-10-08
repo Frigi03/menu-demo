@@ -22,6 +22,7 @@ La pagina sceglie da sola la lingua del telefono (italiano oppure inglese) e ha 
 2. Compila `imperium/menu.json` (Claude lo fa dalle foto o dal PDF del menu).
 3. `python strumenti/controlla_menu.py imperium`
 4. Carica su GitHub: il menu è online in 1-2 minuti, il QR code è in `qr/imperium.png`.
+5. `python strumenti/cartoncino.py imperium` → `qr/imperium-cartoncini.pdf`: foglio A4 con 4 cartoncini da tavolo (A6) da stampare al 100% su cartoncino.
 
 ## Cambiare un piatto o un prezzo
 
