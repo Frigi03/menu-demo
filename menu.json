@@ -238,10 +238,10 @@
       ]
     },
     {
-      "id": "bere",
+      "id": "bevande",
       "nome": {
-        "it": "Da bere",
-        "en": "Drinks"
+        "it": "Vini e bevande",
+        "en": "Wine and drinks"
       },
       "piatti": [
         {
