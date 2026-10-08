@@ -84,7 +84,7 @@
           },
           "descrizione": {
             "it": "Ravioli di patate, pecorino e menta, chiusi a spiga",
-            "en": "Potato, pecorino and mint ravioli with the wheat-ear seal"
+            "en": "Potato, pecorino and mint ravioli, sealed in a wheat-ear braid"
           },
           "prezzo": 14,
           "allergeni": [
@@ -102,7 +102,7 @@
           },
           "descrizione": {
             "it": "Gnocchetti sardi con ragù di salsiccia e zafferano",
-            "en": "Sardinian gnocchetti with sausage ragù and saffron"
+            "en": "Small Sardinian gnocchi with sausage ragù and saffron"
           },
           "prezzo": 13,
           "allergeni": [
@@ -169,7 +169,7 @@
           },
           "descrizione": {
             "it": "Melanzane, pomodoro e pecorino gratinato",
-            "en": "Aubergine, tomato and gratinated pecorino"
+            "en": "Aubergine and tomato baked with a pecorino crust"
           },
           "prezzo": 11,
           "allergeni": [
@@ -282,7 +282,7 @@
             "en": "House mirto"
           },
           "descrizione": {
-            "it": "Amaro di mirto rosso",
+            "it": "Liquore di mirto rosso",
             "en": "Red myrtle liqueur"
           },
           "prezzo": 4,
