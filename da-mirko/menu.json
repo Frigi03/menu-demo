@@ -1,0 +1,478 @@
+{
+  "nome": "Trattoria da Mirko",
+  "demo": "prova",
+  "sottotitolo": {
+    "it": "Trattoria · Alghero",
+    "en": "Trattoria · Alghero"
+  },
+  "piatto_del_giorno": null,
+  "coperto": {
+    "it": "Coperto € 2,50",
+    "en": "Cover charge € 2.50"
+  },
+  "contatti": {
+    "indirizzo": "Via Gioberti 54/56, Alghero",
+    "telefono": "+39 079 940 0850",
+    "orari": {
+      "it": "Tutti i giorni tranne il mercoledì · 12:00-14:00 e 19:00-22:30",
+      "en": "Every day except Wednesday · 12:00-14:00 and 19:00-22:30"
+    }
+  },
+  "categorie": [
+    {
+      "id": "antipasti",
+      "nome": {
+        "it": "Antipasti",
+        "en": "Starters"
+      },
+      "piatti": [
+        {
+          "nome": {
+            "it": "Assaggi di pesce del giorno",
+            "en": "Tasting of the day's seafood"
+          },
+          "descrizione": {
+            "it": "Misto mare",
+            "en": "Mixed seafood"
+          },
+          "prezzo": 25,
+          "tipico": false,
+          "vegetariano": false,
+          "allergeni": [
+            2,
+            4,
+            14
+          ]
+        },
+        {
+          "nome": {
+            "it": "Anemoni di mare fritti",
+            "en": "Fried sea anemones"
+          },
+          "prezzo": 20,
+          "tipico": true,
+          "vegetariano": false,
+          "allergeni": [
+            1
+          ]
+        },
+        {
+          "nome": {
+            "it": "Carpaccio del giorno",
+            "en": "Carpaccio of the day"
+          },
+          "prezzo": 19,
+          "tipico": false,
+          "vegetariano": false,
+          "allergeni": [
+            4
+          ]
+        },
+        {
+          "nome": {
+            "it": "Pesce in salsa agliata alla algherese",
+            "en": "Fish in Alghero-style garlic sauce"
+          },
+          "prezzo": 18,
+          "tipico": true,
+          "vegetariano": false,
+          "allergeni": [
+            4
+          ]
+        },
+        {
+          "nome": {
+            "it": "Cozze in guazzetto con crostini",
+            "en": "Mussels in tomato broth with croutons"
+          },
+          "prezzo": 17,
+          "tipico": false,
+          "vegetariano": false,
+          "allergeni": [
+            1,
+            14
+          ]
+        },
+        {
+          "nome": {
+            "it": "Selezione di salumi e formaggi sardi",
+            "en": "Selection of Sardinian cured meats and cheeses"
+          },
+          "prezzo": 20,
+          "tipico": true,
+          "vegetariano": false,
+          "allergeni": [
+            7
+          ]
+        },
+        {
+          "nome": {
+            "it": "Pecorino arrosto su pane carasau",
+            "en": "Roasted pecorino on carasau bread"
+          },
+          "prezzo": 18,
+          "tipico": true,
+          "vegetariano": true,
+          "allergeni": [
+            1,
+            7
+          ]
+        }
+      ]
+    },
+    {
+      "id": "primi",
+      "nome": {
+        "it": "Primi piatti",
+        "en": "First courses"
+      },
+      "piatti": [
+        {
+          "nome": {
+            "it": "Raviolo nero con bisque di gambero*",
+            "en": "Black ravioli with prawn bisque*"
+          },
+          "prezzo": 22,
+          "tipico": false,
+          "vegetariano": false,
+          "allergeni": [
+            1,
+            2,
+            3,
+            7
+          ]
+        },
+        {
+          "nome": {
+            "it": "Fregola sarda ai frutti di mare*",
+            "en": "Sardinian fregola with seafood*"
+          },
+          "prezzo": 22,
+          "tipico": true,
+          "vegetariano": false,
+          "allergeni": [
+            1,
+            2,
+            14
+          ]
+        },
+        {
+          "nome": {
+            "it": "Spaghetti alla chitarra con vongole e bottarga",
+            "en": "Spaghetti alla chitarra with clams and bottarga"
+          },
+          "prezzo": 22,
+          "tipico": true,
+          "vegetariano": false,
+          "allergeni": [
+            1,
+            4,
+            14
+          ]
+        },
+        {
+          "nome": {
+            "it": "Tagliolini alla algherese",
+            "en": "Alghero-style tagliolini"
+          },
+          "descrizione": {
+            "it": "Vongole, capperi, olive e pomodorino fresco",
+            "en": "Clams, capers, olives and fresh cherry tomatoes"
+          },
+          "prezzo": 20,
+          "tipico": true,
+          "vegetariano": false,
+          "allergeni": [
+            1,
+            3,
+            14
+          ]
+        },
+        {
+          "nome": {
+            "it": "Culurgiones al pomodorino e basilico",
+            "en": "Culurgiones with cherry tomatoes and basil"
+          },
+          "prezzo": 19,
+          "tipico": true,
+          "vegetariano": true,
+          "allergeni": [
+            1,
+            7
+          ]
+        },
+        {
+          "nome": {
+            "it": "Gnocchetti alla campidanese",
+            "en": "Campidano-style gnocchetti"
+          },
+          "descrizione": {
+            "it": "Pomodoro e salsiccia",
+            "en": "Tomato and sausage"
+          },
+          "prezzo": 18,
+          "tipico": true,
+          "vegetariano": false,
+          "allergeni": [
+            1
+          ]
+        }
+      ],
+      "nota": {
+        "it": "* Può essere preparato con prodotto surgelato, secondo stagione e reperibilità.",
+        "en": "* May be prepared with frozen products, depending on season and availability."
+      }
+    },
+    {
+      "id": "secondi",
+      "nome": {
+        "it": "Secondi piatti",
+        "en": "Main courses"
+      },
+      "piatti": [
+        {
+          "nome": {
+            "it": "Pesce fresco del giorno",
+            "en": "Fresh fish of the day"
+          },
+          "prezzo": "6/hg",
+          "tipico": false,
+          "vegetariano": false,
+          "allergeni": [
+            4
+          ]
+        },
+        {
+          "nome": {
+            "it": "Frittura mista*",
+            "en": "Mixed fried seafood*"
+          },
+          "prezzo": 26,
+          "tipico": false,
+          "vegetariano": false,
+          "allergeni": [
+            1,
+            2,
+            4,
+            14
+          ]
+        },
+        {
+          "nome": {
+            "it": "Tagliata di tonno con patate sotto sale*",
+            "en": "Sliced tuna with salt-baked potatoes*"
+          },
+          "prezzo": 22,
+          "tipico": false,
+          "vegetariano": false,
+          "allergeni": [
+            4
+          ]
+        },
+        {
+          "nome": {
+            "it": "Filetto di pesce con crema di zucchine*",
+            "en": "Fish fillet with courgette cream*"
+          },
+          "prezzo": 22,
+          "tipico": false,
+          "vegetariano": false,
+          "allergeni": [
+            4
+          ]
+        },
+        {
+          "nome": {
+            "it": "Tagliata di manzo con rucola, grana e pomodorini",
+            "en": "Sliced beef with rocket, Grana cheese and cherry tomatoes"
+          },
+          "prezzo": 24,
+          "tipico": false,
+          "vegetariano": false,
+          "allergeni": [
+            7
+          ]
+        },
+        {
+          "nome": {
+            "it": "Costolette di agnello alla griglia",
+            "en": "Grilled lamb chops"
+          },
+          "prezzo": 22,
+          "tipico": false,
+          "vegetariano": false,
+          "allergeni": []
+        }
+      ],
+      "nota": {
+        "it": "* Può essere preparato con prodotto surgelato, secondo stagione e reperibilità.",
+        "en": "* May be prepared with frozen products, depending on season and availability."
+      }
+    },
+    {
+      "id": "contorni",
+      "nome": {
+        "it": "Contorni",
+        "en": "Side dishes"
+      },
+      "piatti": [
+        {
+          "nome": {
+            "it": "Verdure grigliate",
+            "en": "Grilled vegetables"
+          },
+          "prezzo": 6,
+          "tipico": false,
+          "vegetariano": true,
+          "allergeni": []
+        },
+        {
+          "nome": {
+            "it": "Patate al forno",
+            "en": "Roast potatoes"
+          },
+          "prezzo": 6,
+          "tipico": false,
+          "vegetariano": true,
+          "allergeni": []
+        },
+        {
+          "nome": {
+            "it": "Patatine fritte*",
+            "en": "French fries*"
+          },
+          "prezzo": 6,
+          "tipico": false,
+          "vegetariano": true,
+          "allergeni": []
+        },
+        {
+          "nome": {
+            "it": "Insalata mista",
+            "en": "Mixed salad"
+          },
+          "prezzo": 5,
+          "tipico": false,
+          "vegetariano": true,
+          "allergeni": []
+        }
+      ],
+      "nota": {
+        "it": "* Può essere preparato con prodotto surgelato, secondo stagione e reperibilità.",
+        "en": "* May be prepared with frozen products, depending on season and availability."
+      }
+    },
+    {
+      "id": "bambini",
+      "nome": {
+        "it": "Menu bambini",
+        "en": "Kids' menu"
+      },
+      "piatti": [
+        {
+          "nome": {
+            "it": "Lasagna alla bolognese",
+            "en": "Lasagna Bolognese"
+          },
+          "prezzo": 18,
+          "tipico": false,
+          "vegetariano": false,
+          "allergeni": [
+            1,
+            3,
+            7,
+            9
+          ]
+        },
+        {
+          "nome": {
+            "it": "Hamburger con patatine*",
+            "en": "Hamburger with fries*"
+          },
+          "prezzo": 16,
+          "tipico": false,
+          "vegetariano": false,
+          "allergeni": [
+            1
+          ]
+        },
+        {
+          "nome": {
+            "it": "Cotoletta di pollo con patatine*",
+            "en": "Breaded chicken cutlet with fries*"
+          },
+          "prezzo": 16,
+          "tipico": false,
+          "vegetariano": false,
+          "allergeni": [
+            1,
+            3
+          ]
+        }
+      ],
+      "nota": {
+        "it": "* Può essere preparato con prodotto surgelato, secondo stagione e reperibilità.",
+        "en": "* May be prepared with frozen products, depending on season and availability."
+      }
+    },
+    {
+      "id": "dolci",
+      "nome": {
+        "it": "Dolci",
+        "en": "Desserts"
+      },
+      "piatti": [
+        {
+          "nome": {
+            "it": "Seadas",
+            "en": "Seadas"
+          },
+          "descrizione": {
+            "it": "Sfoglia fritta ripiena di formaggio, con miele",
+            "en": "Fried pastry filled with cheese, with honey"
+          },
+          "prezzo": 7,
+          "tipico": true,
+          "vegetariano": true,
+          "allergeni": [
+            1,
+            7
+          ]
+        },
+        {
+          "nome": {
+            "it": "Crema catalana",
+            "en": "Crema catalana"
+          },
+          "prezzo": 6,
+          "tipico": false,
+          "vegetariano": true,
+          "allergeni": [
+            3,
+            7
+          ]
+        },
+        {
+          "nome": {
+            "it": "Dolce del giorno",
+            "en": "Dessert of the day"
+          },
+          "prezzo": 6,
+          "tipico": false,
+          "vegetariano": false,
+          "allergeni": []
+        },
+        {
+          "nome": {
+            "it": "Sorbetto al limone",
+            "en": "Lemon sorbet"
+          },
+          "prezzo": 6,
+          "tipico": false,
+          "vegetariano": true,
+          "allergeni": []
+        }
+      ]
+    }
+  ]
+}

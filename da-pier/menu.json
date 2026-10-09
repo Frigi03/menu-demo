@@ -1,0 +1,755 @@
+{
+  "nome": "Ristorante da Pier",
+  "demo": "prova",
+  "sottotitolo": {
+    "it": "Ristorante · Porto turistico di Santa Teresa Gallura",
+    "en": "Restaurant · Santa Teresa Gallura marina"
+  },
+  "piatto_del_giorno": null,
+  "coperto": null,
+  "contatti": {
+    "indirizzo": "Molo Il Chiostro, Porto Turistico, Santa Teresa Gallura",
+    "telefono": "+39 366 269 1107"
+  },
+  "categorie": [
+    {
+      "id": "antipasti-mare",
+      "nome": {
+        "it": "Antipasti di mare",
+        "en": "Seafood starters"
+      },
+      "piatti": [
+        {
+          "nome": {
+            "it": "Cruditè Royal",
+            "en": "Cruditè Royal"
+          },
+          "descrizione": {
+            "it": "Degustazione di antipasti di mare",
+            "en": "Tasting of seafood starters"
+          },
+          "prezzo": null,
+          "tipico": false,
+          "vegetariano": false,
+          "allergeni": [
+            2,
+            4,
+            14
+          ]
+        },
+        {
+          "nome": {
+            "it": "Soutè di cozze e vongole",
+            "en": "Mussel and clam sauté"
+          },
+          "prezzo": null,
+          "tipico": false,
+          "vegetariano": false,
+          "allergeni": [
+            14
+          ]
+        },
+        {
+          "nome": {
+            "it": "Cozze alla marinara",
+            "en": "Mussels marinara"
+          },
+          "prezzo": null,
+          "tipico": false,
+          "vegetariano": false,
+          "allergeni": [
+            14
+          ]
+        },
+        {
+          "nome": {
+            "it": "Polpo croccante in vellutata di patate",
+            "en": "Crispy octopus on creamed potatoes"
+          },
+          "prezzo": null,
+          "tipico": false,
+          "vegetariano": false,
+          "allergeni": [
+            14
+          ]
+        },
+        {
+          "nome": {
+            "it": "Insalata di mare",
+            "en": "Seafood salad"
+          },
+          "prezzo": null,
+          "tipico": false,
+          "vegetariano": false,
+          "allergeni": [
+            2,
+            14
+          ]
+        },
+        {
+          "nome": {
+            "it": "Tartare di tonno pinna gialla marinato e avocado",
+            "en": "Marinated yellowfin tuna tartare with avocado"
+          },
+          "prezzo": null,
+          "tipico": false,
+          "vegetariano": false,
+          "allergeni": [
+            4
+          ]
+        },
+        {
+          "nome": {
+            "it": "Tartare di ricciola con finocchietto e salsa al frutto della passione",
+            "en": "Amberjack tartare with wild fennel and passion fruit sauce"
+          },
+          "prezzo": null,
+          "tipico": false,
+          "vegetariano": false,
+          "allergeni": [
+            4
+          ]
+        },
+        {
+          "nome": {
+            "it": "Tris di tartare",
+            "en": "Trio of tartare"
+          },
+          "descrizione": {
+            "it": "Tonno, ricciola e salmone",
+            "en": "Tuna, amberjack and salmon"
+          },
+          "prezzo": null,
+          "tipico": false,
+          "vegetariano": false,
+          "allergeni": [
+            4
+          ]
+        },
+        {
+          "nome": {
+            "it": "Ostriche",
+            "en": "Oysters"
+          },
+          "prezzo": null,
+          "tipico": false,
+          "vegetariano": false,
+          "allergeni": [
+            14
+          ]
+        }
+      ]
+    },
+    {
+      "id": "antipasti-terra",
+      "nome": {
+        "it": "Antipasti di terra",
+        "en": "Meat and cheese starters"
+      },
+      "piatti": [
+        {
+          "nome": {
+            "it": "Prosciutto e melone",
+            "en": "Cured ham with melon"
+          },
+          "prezzo": null,
+          "tipico": false,
+          "vegetariano": false,
+          "allergeni": []
+        },
+        {
+          "nome": {
+            "it": "Caprese con bufala",
+            "en": "Caprese with buffalo mozzarella"
+          },
+          "prezzo": null,
+          "tipico": false,
+          "vegetariano": true,
+          "allergeni": [
+            7
+          ]
+        },
+        {
+          "nome": {
+            "it": "Salumi selezionati e formaggi tipici",
+            "en": "Selected cured meats and local cheeses"
+          },
+          "prezzo": null,
+          "tipico": true,
+          "vegetariano": false,
+          "allergeni": [
+            7
+          ]
+        },
+        {
+          "nome": {
+            "it": "Tartare di manzo con rucola e pomodorini",
+            "en": "Beef tartare with rocket and cherry tomatoes"
+          },
+          "prezzo": null,
+          "tipico": false,
+          "vegetariano": false,
+          "allergeni": []
+        }
+      ]
+    },
+    {
+      "id": "primi-mare",
+      "nome": {
+        "it": "Primi di mare",
+        "en": "Seafood pasta"
+      },
+      "piatti": [
+        {
+          "nome": {
+            "it": "Tagliolino nero con ricci, bottarga e pistacchi",
+            "en": "Black tagliolino with sea urchin, bottarga and pistachios"
+          },
+          "prezzo": null,
+          "tipico": true,
+          "vegetariano": false,
+          "allergeni": [
+            1,
+            3,
+            4,
+            8,
+            14
+          ]
+        },
+        {
+          "nome": {
+            "it": "Spaghetto alle vongole",
+            "en": "Spaghetti with clams"
+          },
+          "prezzo": null,
+          "tipico": false,
+          "vegetariano": false,
+          "allergeni": [
+            1,
+            14
+          ]
+        },
+        {
+          "nome": {
+            "it": "Spaghetto alle vongole e bottarga",
+            "en": "Spaghetti with clams and bottarga"
+          },
+          "prezzo": null,
+          "tipico": true,
+          "vegetariano": false,
+          "allergeni": [
+            1,
+            4,
+            14
+          ]
+        },
+        {
+          "nome": {
+            "it": "Trofie ai ricci",
+            "en": "Trofie with sea urchin"
+          },
+          "prezzo": null,
+          "tipico": false,
+          "vegetariano": false,
+          "allergeni": [
+            1,
+            14
+          ]
+        },
+        {
+          "nome": {
+            "it": "Bavette all'astice",
+            "en": "Bavette with lobster"
+          },
+          "prezzo": null,
+          "tipico": false,
+          "vegetariano": false,
+          "allergeni": [
+            1,
+            2
+          ]
+        },
+        {
+          "nome": {
+            "it": "Fregola sarda ai frutti di mare",
+            "en": "Sardinian fregola with seafood"
+          },
+          "prezzo": null,
+          "tipico": true,
+          "vegetariano": false,
+          "allergeni": [
+            1,
+            2,
+            14
+          ]
+        },
+        {
+          "nome": {
+            "it": "Linguine con bisque di gamberi",
+            "en": "Linguine with prawn bisque"
+          },
+          "prezzo": null,
+          "tipico": false,
+          "vegetariano": false,
+          "allergeni": [
+            1,
+            2
+          ]
+        },
+        {
+          "nome": {
+            "it": "Paccheri alla rana pescatrice",
+            "en": "Paccheri with monkfish"
+          },
+          "prezzo": null,
+          "tipico": false,
+          "vegetariano": false,
+          "allergeni": [
+            1,
+            4
+          ]
+        }
+      ]
+    },
+    {
+      "id": "primi-terra",
+      "nome": {
+        "it": "Primi di terra",
+        "en": "Pasta and first courses"
+      },
+      "piatti": [
+        {
+          "nome": {
+            "it": "Gnocchi alla gallurese",
+            "en": "Gallura-style gnocchi"
+          },
+          "descrizione": {
+            "it": "Pomodoro, salsiccia e pecorino",
+            "en": "Tomato, sausage and pecorino"
+          },
+          "prezzo": null,
+          "tipico": true,
+          "vegetariano": false,
+          "allergeni": [
+            1,
+            7
+          ]
+        },
+        {
+          "nome": {
+            "it": "Ravioli di ricotta artigianali al pomodoro e basilico",
+            "en": "Handmade ricotta ravioli with tomato and basil"
+          },
+          "prezzo": null,
+          "tipico": false,
+          "vegetariano": true,
+          "allergeni": [
+            1,
+            3,
+            7
+          ]
+        },
+        {
+          "nome": {
+            "it": "Pane zichi di Bonorva alla barbaricina",
+            "en": "Bonorva zichi bread, Barbagia style"
+          },
+          "prezzo": null,
+          "tipico": true,
+          "vegetariano": false,
+          "allergeni": [
+            1,
+            7
+          ]
+        }
+      ]
+    },
+    {
+      "id": "secondi-mare",
+      "nome": {
+        "it": "Secondi di mare",
+        "en": "Seafood main courses"
+      },
+      "piatti": [
+        {
+          "nome": {
+            "it": "Calamaro alla griglia",
+            "en": "Grilled squid"
+          },
+          "prezzo": null,
+          "tipico": false,
+          "vegetariano": false,
+          "allergeni": [
+            14
+          ]
+        },
+        {
+          "nome": {
+            "it": "Calamari fritti",
+            "en": "Fried squid"
+          },
+          "prezzo": null,
+          "tipico": false,
+          "vegetariano": false,
+          "allergeni": [
+            1,
+            14
+          ]
+        },
+        {
+          "nome": {
+            "it": "Fritto di calamari e gamberi",
+            "en": "Fried squid and prawns"
+          },
+          "prezzo": null,
+          "tipico": false,
+          "vegetariano": false,
+          "allergeni": [
+            1,
+            2,
+            14
+          ]
+        },
+        {
+          "nome": {
+            "it": "Fritto misto con pesce di paranza",
+            "en": "Mixed fried small fish"
+          },
+          "prezzo": null,
+          "tipico": false,
+          "vegetariano": false,
+          "allergeni": [
+            1,
+            4
+          ]
+        },
+        {
+          "nome": {
+            "it": "Gamberoni alla griglia",
+            "en": "Grilled king prawns"
+          },
+          "prezzo": null,
+          "tipico": false,
+          "vegetariano": false,
+          "allergeni": [
+            2
+          ]
+        },
+        {
+          "nome": {
+            "it": "Gamberoni al brandy",
+            "en": "King prawns with brandy"
+          },
+          "prezzo": null,
+          "tipico": false,
+          "vegetariano": false,
+          "allergeni": [
+            2
+          ]
+        },
+        {
+          "nome": {
+            "it": "Grigliata mista di pesce",
+            "en": "Mixed grilled fish"
+          },
+          "prezzo": null,
+          "tipico": false,
+          "vegetariano": false,
+          "allergeni": [
+            2,
+            4,
+            14
+          ]
+        },
+        {
+          "nome": {
+            "it": "Tonno pinna gialla fresco alla griglia e pistacchi",
+            "en": "Grilled fresh yellowfin tuna with pistachios"
+          },
+          "prezzo": null,
+          "tipico": false,
+          "vegetariano": false,
+          "allergeni": [
+            4,
+            8
+          ]
+        },
+        {
+          "nome": {
+            "it": "Filetto di branzino con salsa all'arancia",
+            "en": "Sea bass fillet with orange sauce"
+          },
+          "prezzo": null,
+          "tipico": false,
+          "vegetariano": false,
+          "allergeni": [
+            4
+          ]
+        },
+        {
+          "nome": {
+            "it": "Filetto di ricciola al pane profumato",
+            "en": "Amberjack fillet with herb breadcrumbs"
+          },
+          "prezzo": null,
+          "tipico": false,
+          "vegetariano": false,
+          "allergeni": [
+            1,
+            4
+          ]
+        },
+        {
+          "nome": {
+            "it": "Filetto di tonno tataki",
+            "en": "Tuna tataki"
+          },
+          "prezzo": null,
+          "tipico": false,
+          "vegetariano": false,
+          "allergeni": [
+            4,
+            6,
+            11
+          ]
+        }
+      ]
+    },
+    {
+      "id": "a-piacere",
+      "nome": {
+        "it": "A piacere",
+        "en": "Your choice"
+      },
+      "piatti": [
+        {
+          "nome": {
+            "it": "Pescato del giorno",
+            "en": "Catch of the day"
+          },
+          "prezzo": null,
+          "tipico": false,
+          "vegetariano": false,
+          "allergeni": [
+            4
+          ]
+        },
+        {
+          "nome": {
+            "it": "Aragosta di Sardegna",
+            "en": "Sardinian spiny lobster"
+          },
+          "prezzo": null,
+          "tipico": true,
+          "vegetariano": false,
+          "allergeni": [
+            2
+          ]
+        },
+        {
+          "nome": {
+            "it": "Astice blu di Sardegna",
+            "en": "Sardinian blue lobster"
+          },
+          "prezzo": null,
+          "tipico": true,
+          "vegetariano": false,
+          "allergeni": [
+            2
+          ]
+        }
+      ]
+    },
+    {
+      "id": "secondi-terra",
+      "nome": {
+        "it": "Secondi di terra",
+        "en": "Meat main courses"
+      },
+      "piatti": [
+        {
+          "nome": {
+            "it": "Filetto di manzo alla griglia",
+            "en": "Grilled beef fillet"
+          },
+          "prezzo": null,
+          "tipico": false,
+          "vegetariano": false,
+          "allergeni": []
+        },
+        {
+          "nome": {
+            "it": "Filetto con riduzione di mirto rosso",
+            "en": "Beef fillet with red myrtle reduction"
+          },
+          "prezzo": null,
+          "tipico": true,
+          "vegetariano": false,
+          "allergeni": []
+        },
+        {
+          "nome": {
+            "it": "Tagliata di manzo con rucola, grana e pachino",
+            "en": "Sliced beef with rocket, Grana cheese and cherry tomatoes"
+          },
+          "prezzo": null,
+          "tipico": false,
+          "vegetariano": false,
+          "allergeni": [
+            7
+          ]
+        }
+      ]
+    },
+    {
+      "id": "contorni",
+      "nome": {
+        "it": "Contorni",
+        "en": "Side dishes"
+      },
+      "piatti": [
+        {
+          "nome": {
+            "it": "Patate al forno al rosmarino",
+            "en": "Rosemary roast potatoes"
+          },
+          "prezzo": null,
+          "tipico": false,
+          "vegetariano": true,
+          "allergeni": []
+        },
+        {
+          "nome": {
+            "it": "Insalata di stagione",
+            "en": "Seasonal salad"
+          },
+          "prezzo": null,
+          "tipico": false,
+          "vegetariano": true,
+          "allergeni": []
+        },
+        {
+          "nome": {
+            "it": "Verdura alla griglia",
+            "en": "Grilled vegetables"
+          },
+          "prezzo": null,
+          "tipico": false,
+          "vegetariano": true,
+          "allergeni": []
+        },
+        {
+          "nome": {
+            "it": "Pomodori e rucola",
+            "en": "Tomatoes and rocket"
+          },
+          "prezzo": null,
+          "tipico": false,
+          "vegetariano": true,
+          "allergeni": []
+        }
+      ]
+    },
+    {
+      "id": "dolci",
+      "nome": {
+        "it": "Dolci",
+        "en": "Desserts"
+      },
+      "piatti": [
+        {
+          "nome": {
+            "it": "Tiramisù",
+            "en": "Tiramisù"
+          },
+          "descrizione": {
+            "it": "Anche alla frutta",
+            "en": "Also with fruit"
+          },
+          "prezzo": null,
+          "tipico": false,
+          "vegetariano": true,
+          "allergeni": [
+            1,
+            3,
+            7
+          ]
+        },
+        {
+          "nome": {
+            "it": "Crema catalana",
+            "en": "Crema catalana"
+          },
+          "prezzo": null,
+          "tipico": false,
+          "vegetariano": true,
+          "allergeni": [
+            3,
+            7
+          ]
+        },
+        {
+          "nome": {
+            "it": "Seadas al miele artigianali",
+            "en": "Handmade seadas with honey"
+          },
+          "prezzo": null,
+          "tipico": true,
+          "vegetariano": true,
+          "allergeni": [
+            1,
+            7
+          ]
+        },
+        {
+          "nome": {
+            "it": "Tortino al cioccolato con cuore tenero",
+            "en": "Chocolate fondant cake"
+          },
+          "prezzo": null,
+          "tipico": false,
+          "vegetariano": true,
+          "allergeni": [
+            1,
+            3,
+            7
+          ]
+        },
+        {
+          "nome": {
+            "it": "Sorbetto al limone, alla vodka o al mirto",
+            "en": "Lemon sorbet, with vodka or myrtle"
+          },
+          "prezzo": null,
+          "tipico": false,
+          "vegetariano": true,
+          "allergeni": []
+        },
+        {
+          "nome": {
+            "it": "Tartufo bianco o nero",
+            "en": "White or black tartufo ice cream"
+          },
+          "prezzo": null,
+          "tipico": false,
+          "vegetariano": true,
+          "allergeni": [
+            3,
+            7,
+            8
+          ]
+        },
+        {
+          "nome": {
+            "it": "Fantasia di frutta fresca",
+            "en": "Fresh fruit platter"
+          },
+          "prezzo": null,
+          "tipico": false,
+          "vegetariano": true,
+          "allergeni": []
+        }
+      ]
+    }
+  ]
+}
