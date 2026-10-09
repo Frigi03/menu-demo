@@ -28,6 +28,14 @@ La pagina sceglie da sola la lingua del telefono (italiano oppure inglese) e ha 
 
 Modifica solo `menu.json` del cliente e carica. Il QR code non cambia mai.
 
+## Registro dei menu nel CRM
+
+Ogni menu (anteprima o cliente) è registrato anche nel CRM, scheda **Menu**: artifact https://claude.ai/artifact/BpmrEPSAtkCu21A4qGxBov, collezione `menu`, un documento per cartella (doc_id = nome della cartella).
+Campi: `locale`, `zona`, `contatto_id` (id in `contatti`), `cartella`, `link`, `stato` (Esempio / Anteprima / Da correggere / Pubblicato), `fonte`, `piatti`, `categorie`, `prezzi` (Tutti / Parziali / Nessuno), `da_sistemare`, `modifiche`, `aggiornato` (AAAA-MM-GG).
+
+- Quando crei o aggiorni un menu, aggiorna anche il suo documento (piatti, prezzi, `aggiornato`).
+- Frigi scrive le correzioni nel campo `modifiche`: applicale al `menu.json`, controlla con `controlla_menu.py`, pubblica e svuota il campo.
+
 ## Formato di menu.json
 
 ```json
